@@ -1,0 +1,44 @@
+:root{
+    --color-fondo: #a9a5a6bf;
+    --color-borde: #d90062bf;
+
+}
+
+*{
+    margin: 0;
+}
+/*bloques srv*/
+.servicios {
+    background-color: var(--color-fondo);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.marco-servicios{
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid var(--color-borde);
+    border-top: 3px solid var(--color-borde);
+    width: 13em;
+    text-align: center;
+
+}
+section > div > h1 {
+    text-align: center;
+}
+.clasificacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
+/*texto y titulo srv*/
+.text-srv {
+    text-align: center;
+}
+.title-srv {
+    text-align: center;
+}
