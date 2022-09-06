@@ -94,3 +94,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.servicio1{
+    padding-left: 2em;
+    padding-right: 2em;
+}
