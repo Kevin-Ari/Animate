@@ -2,30 +2,33 @@
 
 :root {
 --color-texto: #000000;
---color-: #FFFFFF80;
---color-: #00000080;
 --color-nav: #D90062BF;
 --color-btn: #D90062;
+--transparencia: #FFFFFF80;
+--transparencia2: #00000080;
 --color-gris100: #CCCCCC;
---color-gris300: #666666;
---color-: #F3F3F3;
---color-: #509EE3;
+--color-gris150: #222222;
+--color-gris200: #666666;
+--color-gris300: #333333;
+--color-gris500: #222222;
+--color-gris700: #14192D;
+--color-celeste: #509EE3;
 --color-fondo-nav:rgba(20,25,45,1);
---color-: #14192D;
---color-: #222222;
 --color-footer: #501464;
---color-: #333333;
---color-: #FFFFFF;
---color-: #000000;
+--color-blanco: #FFFFFF;
+--color-blanco2: #F3F3F3;
 --fondo-home: url(../img/fondo-home.jpg)
+
 }
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Raleway;
 }
 .header {
     width: 100%;
+    height: 8vh;
     background-color: var(--color-fondo-nav);
     display: flex;
     color: var(--color-nav);
@@ -68,7 +71,7 @@ body{
 .home-titulo {
     margin: 0;
     padding: 0;
-    color: #F3F3F3;
+    color: var(--color-blanco2);
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: clamp(44px, 1.5vw, 64px);
@@ -76,7 +79,7 @@ body{
 
 .home-btn {
     background-color: var(--color-btn);
-    color: #F3F3F3;
+    color: var(--color-blanco2);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: clamp(24px, 1.5vw, 48px);
@@ -91,4 +94,8 @@ body{
     justify-content: none;
     align-items: center;
     flex-direction: column;
+}
+.servicio1{
+    padding-left: 2em;
+    padding-right: 2em;
 }
