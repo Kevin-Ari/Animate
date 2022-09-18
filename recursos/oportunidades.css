@@ -62,11 +62,13 @@ body{
         flex-direction: column;
         justify-content: space-between;
         align-items: stretch;
+        color:#14192D;
     }
     
     article > h2 {
         font-size: 16px;
         font-weight: 600;
+        color:#14192D;
     }
     
     article > h3 {
@@ -88,4 +90,17 @@ body{
     article > a:active {
         background-color: var(--color-footer);
         border: 3px solid var(--color-btn);
+    }
+
+    .oportunidades{
+        display: flexwrap;
+    }
+
+    .ofertas {
+        border-width: 3px;
+        border-style: solid;
+        border-color: var(--color-btn);
+        margin: 10px;
+        padding: 30px;
+        border-radius: 10px;
     }
