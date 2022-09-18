@@ -3,8 +3,12 @@
     --fuente-titulo : 900 clamp(32px, 3.5vw, 64px) 'Raleway', sans-serif;
 }
 
+.nav__lista{
+    margin-top: 16px;
+}
+
 .testimonios{
-    background-image: url(../img/fondo-testimonios.png);
+    background-image: url(../img/testimonios.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

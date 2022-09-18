@@ -44,28 +44,42 @@ body{
     width: 25%;
     padding-left: 15px;
 }
-.header__nav ul{
+
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__lista{
     list-style: none;
     display: flex;
     justify-self: end;
     width: auto;
 }
 
-.header__nav ul li {
+.item-link{
     padding-right: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: clamp(12px, 1.3vw, 24px);
     margin: 0;
+    text-decoration: none;
+    color: var(--color-btn);
+}
+
+.item-link:hover{
+    opacity: 90%;
 }
 
 .contenedor-home{
     background-image: var(--fondo-home);
-    height: 90vh;
+    height: 92vh;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .home-titulo {
