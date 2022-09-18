@@ -8,12 +8,13 @@
 .contacto-titulo {
     text-align: center;
     width: 30vw;
-    border-top: 2px solid var(--color-btn);
-    border-bottom: 2px solid var(--color-btn);
-    line-height: 1.5;
+    border-top: 3px solid var(--color-btn);
+    border-bottom: 3px solid var(--color-btn);
+    line-height: 2;
 }
 
 .contacto-contenedor {
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,7 +28,12 @@
     display: flex;
     box-shadow: 6px 6px 6px rgb(207, 207, 207);
     border-radius: 9px;
-    padding-left: 20px;
+    flex-direction: column;
+
+}
+
+.mini-contenedor {
+    text-align: center;
 }
 
 .titulo-seccion {
@@ -38,7 +44,8 @@
 .contacto-iconos {
     display: flex;
     list-style: none;
-    
+    justify-content: center;
+
 }
 
 .icono {
@@ -49,8 +56,8 @@
 .contenedor-texto {
     box-shadow: 6px 6px 6px rgb(167, 166, 166);
     margin-top: 20px;
-    width: 60vw;
-    padding: 5px;
+    max-width: 60vw;
+    padding: 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,24 +65,26 @@
 }
 
 .contenedor-texto input{
-    font-size: 18px;
+    font-size: 20px;
     width: 60vw;
     border: none;
     border-bottom: 2px solid rgb(143, 143, 143);
+    line-height: 2;
 }
 .labels-top {
     display: flex;
     gap: 5px;
-    width: 52vw;
+    width: 51vw;
     padding: 5px;
     border: none;
 }
+
 .label-texto {
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid rgb(143, 143, 143);
-    padding: 5px;
+    padding: 10px;
     margin: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     width: 50vw;
     height: 30vh;
 }
@@ -98,3 +107,4 @@ footer {
     width: 100%;
     background-color: var(--color-footer);
 }
+
