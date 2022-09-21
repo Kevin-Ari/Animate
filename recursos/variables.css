@@ -20,6 +20,7 @@
 --fondo-home: url(../img/fondo-home.jpg)
 
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -70,46 +71,4 @@ body{
 
 .item-link:hover{
     opacity: 90%;
-}
-
-.contenedor-home{
-    background-image: var(--fondo-home);
-    height: 92vh;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-}
-
-.home-titulo {
-    margin: 0;
-    padding: 0;
-    color: var(--color-blanco2);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: clamp(44px, 1.5vw, 64px);
-}
-
-.home-btn {
-    background-color: var(--color-btn);
-    color: var(--color-blanco2);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: clamp(24px, 1.5vw, 48px);
-    padding: 15px;
-    border-radius: 6px;
-    border: none;
-    margin-top: 20px;
-}
-
-.home-centro {
-    display: flex;
-    justify-content: none;
-    align-items: center;
-    flex-direction: column;
-}
-.servicio1{
-    padding-left: 2em;
-    padding-right: 2em;
 }
