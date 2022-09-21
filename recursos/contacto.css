@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    width: 97vw;
     text-align: center;
 }
 
@@ -102,10 +102,14 @@
 footer {
     margin-top: 50px;
     text-align: center;
-    padding: 2px;
+    height: 9vh;
     color: white;
     width: 100%;
     background-color: var(--color-footer);
+}
+
+.footer-texto {
+    padding-top: 50px;
 }
 
 
