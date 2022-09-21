@@ -20,43 +20,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.header {
-    width: 100%;
-    background-color: var(--color-fondo-nav);
-    display: flex;
-    color: var(--color-nav);
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.header-titulo{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: clamp(32px, 1.5vw, 64px);
-    margin: 0;
-    width: 25%;
-    padding-left: 15px;
-}
-.header__nav ul{
-    list-style: none;
-    display: flex;
-    justify-self: end;
-    width: auto;
-}
-
-.header__nav ul li {
-    padding-right: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: clamp(12px, 1.3vw, 24px);
-    margin: 0;
-}
-
 .ofertas {
         display: flex;
         flex-direction: column;
