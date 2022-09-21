@@ -75,6 +75,21 @@ i{
     color: var(--color-borde);
     font-size: 50px;
 }
+.logos-servicios-base{
+    width: 19%;
+}
+.logos-servicios-2{
+    width: 17%;
+}
+.logos-servicios-3{
+    width: 14%;
+}
+.logos-servicios-5{
+    width: 22%;
+}
+.logos-servicios-6{
+    width: 21%;
+}
 @media screen and (max-width: 500px){
     .clasificacion {
         grid-template-columns: 1fr 1fr;
