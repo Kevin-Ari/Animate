@@ -24,7 +24,7 @@
 
 .contacto-seccion {
     text-align: center;
-    width: 25vw;
+    width: 21vw;
     display: flex;
     box-shadow: 6px 6px 6px rgb(207, 207, 207);
     border-radius: 9px;
@@ -96,7 +96,7 @@
     background-color: var(--color-btn);
     padding: 18px;
     margin-bottom: 15px;
-    width: 20vw;
+    width: 12vw;
 }
 
 footer {
@@ -122,5 +122,11 @@ footer {
     }
     .labels-top{
         flex-direction: column;
+    }
+    .contacto-seccion {
+        width: 55vw;
+    }
+    .boton-enviar {
+        width: 20vw;
     }
 }
