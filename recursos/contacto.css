@@ -8,6 +8,7 @@
 .contacto-titulo {
     text-align: center;
     width: 30vw;
+    color: var(--color-btn);
     border-top: 3px solid var(--color-btn);
     border-bottom: 3px solid var(--color-btn);
     line-height: 2;
@@ -26,10 +27,10 @@
     text-align: center;
     width: 21vw;
     display: flex;
-    box-shadow: 6px 6px 6px rgb(207, 207, 207);
+    box-shadow: 10px 15px 25px 10px rgba(76, 76, 78, 0.2);
     border-radius: 9px;
     flex-direction: column;
-
+    cursor: pointer;
 }
 
 .mini-contenedor {
@@ -54,7 +55,7 @@
 }
 
 .contenedor-texto {
-    box-shadow: 6px 6px 6px rgb(167, 166, 166);
+    box-shadow:  10px 15px 25px 10px rgba(76, 76, 78, 0.2);
     margin-top: 20px;
     max-width: 60vw;
     padding: 65px;
@@ -68,7 +69,7 @@
     font-size: 20px;
     width: 60vw;
     border: none;
-    border-bottom: 2px solid rgb(143, 143, 143);
+    border-bottom: 3px solid rgb(96, 96, 96);
     line-height: 2;
 }
 .labels-top {
@@ -81,7 +82,7 @@
 
 .label-texto {
     font-size: 20px;
-    border: 2px solid rgb(143, 143, 143);
+    border: 3px solid rgb(96, 96, 96);
     padding: 10px;
     margin: 15px;
     margin-bottom: 25px;
@@ -97,6 +98,7 @@
     padding: 18px;
     margin-bottom: 15px;
     width: 12vw;
+    cursor: pointer;
 }
 
 footer {
@@ -125,6 +127,7 @@ footer {
     }
     .contacto-seccion {
         width: 55vw;
+        margin: 10px;
     }
     .boton-enviar {
         width: 20vw;
