@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 83vh;
 }
 
 .contacto-titulo {
@@ -132,4 +133,14 @@ footer {
     .boton-enviar {
         width: 20vw;
     }
+    .contacto-main {
+        height: 125vh;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contacto-main{ 
+      height: 83vh;  
+    }
+    
 }
