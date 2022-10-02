@@ -3,91 +3,251 @@
     --color-borde: #d90062bf;
     --color-texto-srv: #000000;
     --color-titulo-srv: #333333;
-
 }
-
 *{
     margin: 0;
+    text-align: center;
+    text-decoration: none;
 }
-/*bloques srv*/
-.servicios {
-    background-color: var(--color-fondo);
-    width: 100%;
+/*CONFIGURACION HEADER POR BTN*/
+.header-titulo{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 1em;
-    padding-top: 1.8%;
-    padding-bottom: 3%;
-
+    justify-content: flex-start;
 }
+/*DOM DE SERVICIOS*/
+.dom-servicios{
+    background-color: var(--color-fondo);
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    margin: 0 auto;
+}
+/*MARCO QUE OFRECEMOS*/
 .marco-servicios{
-    
-    margin-top: 1em;
     margin-bottom: 1em;
     border-bottom: 3px solid var(--color-borde);
     border-top: 3px solid var(--color-borde);
-    width: 20em;
-    text-align: center;
+    width: 21%;
+}
+/*BLOQUES SRV INDIVIDUAL*/
+.servicio-unico{
+    width: 26em;
+    height: 15em;
+    margin: 5px;
+    padding-bottom: 30px;
+
+    cursor: default;
+    transition: all 400ms ease;
+
+    -webkit-box-shadow: 6px 6px 5px 1px rgba(199,199,199,1);
+    -moz-box-shadow: 6px 6px 5px 1px rgba(199,199,199,1);
+    box-shadow: 6px 6px 5px 1px rgba(199,199,199,1);
+}
+.servicio-unico:hover{
+    -webkit-box-shadow: 7px 7px 18px 3px rgba(186,186,186,1);
+    -moz-box-shadow: 7px 7px 18px 3px rgba(186,186,186,1);
+    box-shadow: 7px 7px 18px 3px rgba(186,186,186,1);
+    transform: translateY(-2%);
 
 }
-section > div > h1 {
-    text-align: center;
-}
-.clasificacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
 
+/*-------------------------FLEX----------------------*/
+/*FLEX DE SERVICIOS*/
+.flex-srv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-/*texto y titulo srv*/
-.text-srv {
-    text-align: center;
+/*FLEX DE TITULO QUE OFRECEMOS*/
+.flex-titulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*---------------------TIPOGRAFIA-------------------*/
+/*TITULO QUE OFRECEMOS*/
+.titulo-principal {
     font-family: 'Raleway';
     font-style: normal;
-    color: var(--color-texto-srv);
+    font-size: 2.5vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: var(--color-titulo-srv);
 }
-.title-srv {
+/*TITULO DE SERVICIOS INDIVIDUALES*/
+.titulo-ind-srv {
     text-align: center;
     font-family: 'Raleway';
     font-style: normal;
     color: var(--color-titulo-srv);
     padding-bottom: 5%;
     padding-top: 5%;
-
 }
-.titulo-srv {
+/*TEXTO DE SERVICOS INDIVIDUALES*/
+.texto-srv {
     font-family: 'Raleway';
     font-style: normal;
-    font-size: 38px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    color: var(--color-titulo-srv);
+    color: var(--color-texto-srv);
+    margin-left: 10%;
+    margin-right: 10%;
 }
-.servicio{
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-    text-align: center;
-}
+/*---------------------ICONOS-------------------*/
 .logos-servicios-base{
-    width: 5vw;
+    max-width: 5vw;
+    margin-top: 1.5em;
 }
 .logos-servicios-2{
-    width: 9vh;
+    max-width: 4.5vw;
+    margin-top: 1.5em;
 }
 .logos-servicios-3{
-    width: 4vw;
+    max-width: 4vw;
+    margin-top: 1.5em;
 }
 .logos-servicios-5{
-    width: 6vw;
+    max-width: 5vw;
+    padding-bottom: 6px;
+    margin-top: 1.5em;
 }
 .logos-servicios-6{
-    width: 6vw;
+    max-width: 4.8vw;
+    padding-bottom: 2px;
+    margin-top: 1.5em;
 }
-@media screen and (max-width: 500px){
-    .clasificacion {
-        grid-template-columns: 1fr 1fr;
+/*---------------------MENU LECTOR DE PANTALLA-------------------*/
+.sr-only{
+    position: absolute;
+    top: 0;
+    left: -4000;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+/*ELIMINACION DE BOTON MOBIL*/
+.btn-mobil{
+    display: none;
+}
+/*---------------------------SUB MENU---------------------*/
+/*SUBMENI INVISIBLE*/
+    .submenu{
+        position: absolute;
+
+    }
+    
+    .link-submenu{
+        display: block;
+        padding: 1vw 4.5vw 1vw 4.5vw;
+        color: var(--color-fondo);
+        font-size: 1.2vw;
+
+    }
+    .link-submenu{
+        padding-right: 5em;
+        padding-left: 3em;
+    }
+    
+/*---------------------VISTA TABLET-------------------*/
+@media screen and (max-width:770px){
+    /*MENU DE INICIO*/
+    /*.header{
+        flex-direction: column;
+        padding-bottom: 0.8em;
+        padding-top: 0.5em;
+    }*/
+}
+/*---------------------VISTA MOBIL-------------------*/
+@media screen and (max-width: 870px){
+    .header{
+        flex-direction: row;
+        gap: 0;
+    }
+/*TITULO HEADER*/
+    .header-titulo{
+    z-index: 101;
+}
+/*TITULO PRINCIPAL DE SERVICIO*/
+    .titulo-principal{
+        font-size: 4.2vw;
+}
+    .marco-servicios{
+        width: 35%;
+    }
+/*--------------------NAV CONFIGURACION--------------*/
+/*LISTA MOBIL POR DEFAULT*/
+    .nav__lista{
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color-fondo-nav);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 8vh;
+
+        transform: translateY(-100%);
+        padding: 0px;
+    }
+    .item-link{
+        font-size: 3vh;
+    }
+/*CONFIGURACION DEL BOTON*/
+    .btn-mobil{
+        display: block;
+        position: absolute;
+        right: 1.6em;
+        top: 1.5em;
+        z-index: 101;
+
+        width: 3em;
+        height: 3em;
+        border: none;
+        background-color: transparent;
+        background-image: url('../img/MenuMobileSVG.svg');
+        background-repeat: no-repeat;
+    }
+/*-------------------FUNCIONES DEL BOTON------------------*/
+/*SENTENCIA LISTA*/
+   .nav__lista[data-visible="true"]{
+        transform: translateX(0);
+        transition: transform 300ms ease;
+    }
+/*SENTENCIA DEL BOTON*/
+    .btn-mobil[aria-expanded="true"]{
+        background-image: url('../img/MenuMobile2SVG.svg');
     }
 }
+/*------------------------SUBMENU----------------------*/
+/*MENU DESPLEGABLE*/
+    .container-submenu{
+    position: relative;
+    }
+    .submenu{
+    width: 100%;
+    padding: 0;
+    height: 0;
+    overflow: visible;
+    z-index: 103;
+    opacity: 0;
+    visibility: hidden;
+    }
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .link-submenu:hover{
+        background-color: #666666;
+    }
+    .item-submenu{
+        display: block;
+        color: var(--color-fondo);
+        text-decoration: none;
+        background-color: var(--color-borde);
+    }
+    .lista-item{
+        width: 100%;
+        margin: 0;
+    }
