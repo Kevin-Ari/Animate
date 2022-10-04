@@ -158,6 +158,7 @@
 /*---------------------VISTA MOBIL-------------------*/
 @media screen and (max-width: 870px){
     .header{
+        position: fixed;
         flex-direction: row;
         gap: 0;
     }
