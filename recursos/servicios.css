@@ -16,6 +16,7 @@
 }
 /*DOM DE SERVICIOS*/
 .dom-servicios{
+    position: static;
     background-color: var(--color-fondo);
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
@@ -31,7 +32,7 @@
 /*BLOQUES SRV INDIVIDUAL*/
 .servicio-unico{
     width: 26em;
-    height: 15em;
+    height: 100%;
     margin: 5px;
     padding-bottom: 30px;
 
@@ -84,6 +85,7 @@
 }
 /*TEXTO DE SERVICOS INDIVIDUALES*/
 .texto-srv {
+    display: block;
     font-family: 'Raleway';
     font-style: normal;
     color: var(--color-texto-srv);
@@ -138,7 +140,7 @@
         display: block;
         padding: 1vw 4.5vw 1vw 4.5vw;
         color: var(--color-fondo);
-        font-size: 1.2vw;
+        font-size: 1.3vh;
 
     }
     .link-submenu{
@@ -146,18 +148,22 @@
         padding-left: 3em;
     }
     
-/*---------------------VISTA TABLET-------------------*/
-@media screen and (max-width:770px){
-    /*MENU DE INICIO*/
-    /*.header{
-        flex-direction: column;
-        padding-bottom: 0.8em;
-        padding-top: 0.5em;
-    }*/
+/*---------------------VISTA grande-------------------*/
+@media screen and (min-width:1703px){
+    .flex-srv{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .servicio-unico{
+        padding: 0%;
+    }
+
 }
 /*---------------------VISTA MOBIL-------------------*/
 @media screen and (max-width: 870px){
     .header{
+        z-index: 100;
         position: fixed;
         flex-direction: row;
         gap: 0;
@@ -199,8 +205,9 @@
     .btn-mobil{
         display: block;
         position: absolute;
-        right: 1.6em;
-        top: 1.5em;
+        padding-top: 1.1vw;
+        right: 1.6vw;
+        top: 1.5vw;
         z-index: 101;
 
         width: 3em;
