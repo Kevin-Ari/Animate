@@ -435,7 +435,7 @@
     }
 /*-------------------FUNCIONES DEL BOTON------------------*/
 /*SENTENCIA LISTA*/
-   .nav__lista[data-visible="true"]{
+.nav__lista[data-visible="true"]{
         transform: translateX(0);
         transition: transform 300ms ease;
     }
