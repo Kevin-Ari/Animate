@@ -17,6 +17,10 @@
     font-size: clamp(44px, 1.5vw, 64px);
 }
 
+.home-subtitulo {
+    color: var(--color-blanco2);
+}
+
 .home-btn {
     background-color: var(--color-btn);
     color: var(--color-blanco2);
