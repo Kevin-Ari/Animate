@@ -28,7 +28,8 @@
     height: 72vh;
     background-attachment:local;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-size:cover
 }
@@ -38,8 +39,9 @@
     padding: 0;
     color: var(--color-blanco2);
     font-family: 'Raleway', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: clamp(44px, 1.5vw, 64px);
+<<<<<<< HEAD
 }
 
 .boton-presupuesto {
@@ -52,6 +54,9 @@
     width: 12vw;
     cursor: pointer;
     
+=======
+    margin-top: 30vh;
+>>>>>>> ff0065c3e1d22a14157b88f99232d52efe68fe46
 }
 
 /*.home-btn {
@@ -68,20 +73,38 @@
 /*
 .home-centro {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     margin-left: 150px;
+    text-align: center;
 }
 .servicio1{
     padding-left: 2em;
     padding-right: 2em;
 }
 
+<<<<<<< HEAD
 .home-img {
     margin-left: 50px;
 }*/
+=======
+.contenedor-button {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.boton-home {
+    color: white;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--color-btn);
+    padding: 18px;
+    width: 20vw;
+    cursor: pointer;
+}
+>>>>>>> ff0065c3e1d22a14157b88f99232d52efe68fe46
 
 /* -- QUIENES SOMOS -- */ 
 .como-empezo {
@@ -99,7 +122,9 @@
     border-bottom: 3px solid var(--color-btn);
     line-height: 2;
     max-width: 35vw;
+    margin: 30px auto;
 }
+<<<<<<< HEAD
 .strong-marca {
     color: #D90062;
 }
@@ -108,14 +133,19 @@
     text-align: center;
 }
 
+=======
+.titulo-1-quienes {
+    text-align: center;
+}
+>>>>>>> ff0065c3e1d22a14157b88f99232d52efe68fe46
 .presentacion_inicial {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    max-width: 30%;
-    margin: 0px 50px 0px 50px;
-    
+    max-width: 850px;
+    margin: 30px 50px 0px 50px;
+    font-size: clamp(10px, 1.5vw, 20px);
 }
 
 .present_comp{
@@ -123,9 +153,16 @@
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .img_linda { /*falta achicarla */
+=======
+.img-logo {
+    margin-top: 30px;
+}
+.comienzo-logo {
+>>>>>>> ff0065c3e1d22a14157b88f99232d52efe68fe46
     max-width: 70vw;
-    max-height: 40vh;
+    max-height: 25vh;
     border-radius: 25px;
 } 
 
@@ -139,6 +176,10 @@
     line-height: 2;
     max-width: 25vw;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff0065c3e1d22a14157b88f99232d52efe68fe46
 .contenedor_cards1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
