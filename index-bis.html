@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,14 @@
     <title>Animate</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logosAnimate/LOGO.ico">
 </head>
+
 <body>
     <header class="header">
         <h1 class="header-titulo"> animate </h1>
         <nav class="header__nav">
             <ul class="nav__lista">
-                <li class="lista-item"><a class="item-link" href="index.html">Home</a></li>
-                <li class="lista-item"><a class="item-link" href="quienes_somos.html">¿Quienes Somos?</a></li>
+                <li class="lista-item"><a id="item-link" href="index.html">Home</a></li>
+                <li class="lista-item"><a id="item-link" href="quienes_somos.html">Sobre nosotros</a></li>
                 <li class="lista-item"><a class="item-link" href="servicios.html">Servicios</a></li>
                 <li class="lista-item"><a class="item-link" href="blog.html">Blog</a></li>
                 <li class="lista-item"><a class="item-link" href="testimonios.html">Testimonios</a></li>
@@ -70,155 +72,204 @@
             </div>
         </div>
     </section> -->
-    <section class="como-empezo">
-        <div class="titulo-1-quienes">
-            <h2 class="como-empezo-titulo">¿Cómo empezó Animate?</h2>
+    <div id="Sobre-nosotros">
+        <section class="como-empezo">
+            <div class="titulo-1-quienes">
+                <h2 class="como-empezo-titulo">¿Cómo empezó?</h2>
+            </div>
+        </section>
+        <section class="present_comp">
+            <div class="presentacion_inicial">
+                <p>Animate es un equipo conformado por cinco integrantes. Nos conocimos mientras estudiabamos para
+                    programadores Full Stack gracias a una beca recibida través de Fundación Pescar y J.P. Morgan.
+                    <br><br>
+                    Durante la capacitación, nos tocó hacer un proyecto juntos y nos dimos cuenta que cada uno tenia
+                    mucho
+                    potencial en una rama diferente. <br><br>
+                    Gracias a esto, nos unimos y hoy podemos brindar una asesoria integral con una visión completa en
+                    cada
+                    uno de nuestros proyectos.
+                </p>
+            </div>
+            <div class="img-logo">
+                <img class="comienzo-logo" src="img/logosAnimate/logo1.png" alt="fotodellogo">
+            </div>
+        </section>
+        <div class="titulo-team">
+            <h2>Te presentamos al <strong class="strong-marca">TEAM</strong></h2>
         </div>
-    </section>
-    <section class="present_comp">
-        <div class="presentacion_inicial">
-            <p>Animate es un equipo conformado por cinco integrantes. Nos conocimos mientras estudiabamos para programadores Full Stack gracias a una beca recibida través de Fundación Pescar y J.P. Morgan. <br><br>
-            Durante la capacitación, nos tocó hacer un proyecto juntos y nos dimos cuenta que cada uno tenia mucho potencial en una rama diferente. <br><br>
-            Gracias a esto, nos unimos y hoy podemos brindar una asesoria integral con una visión completa en cada uno de nuestros proyectos. 
-            </p>
-        </div>
-        <div class="img-logo">
-            <img class="comienzo-logo" src="img/logosAnimate/logo1.png" alt="fotodellogo">
-        </div>
-    </section>
-    <section class="contenedor_cards1">
-        <div class="card">
-            <div class="head">
-                <div class="circulo"></div>
-                    <div class="img">
-                        <img src="img/fotocv/ana_foto_perfil.png" alt="foto_de_perfil_ana">
+        <div class="seccion-cards">
+            <section class="contenedor_cards1">
+                <div class="card">
+                    <div class="head">
+                        <div class="circulo"></div>
+                        <div class="img">
+                            <img src="img/fotocv/ana_foto_perfil.png" alt="foto_de_perfil_ana">
+                        </div>
+                    </div>
+                    <div class="presentacion">
+                        <h3>Ana Laura Mercado</h3>
+                        <h4>
+                            Diseñadora Grafica Digital
+                        </h4>
+                        <p>¡Hola!<br>¿Tenes una idea pero no sabes si es posible?<br><br>Escribime y animate a hacerla
+                            realidad</p>
+                    </div>
+
+                    <div class="contacto">
+                        <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar
+                            CV</a>
                     </div>
                 </div>
-            <div class="presentacion">
-                <h3>Ana Laura Mercado</h3>
-                <h4>
-                    Diseñadora Grafica Digital
-                </h4>
-                <p>¡Hola!<br>¿Tenes una idea pero no sabes si es posible?<br><br>Escribime y animate a hacerla realidad</p>
-            </div>
-    
-            <div class="contacto">
-                <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar CV</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="head">
-                <div class="circulo"></div>
-                    <div class="img">
-                        <img src="img/fotocv/galo_foto_perfil.png" alt="foto_de_perfil_galo">
+                <div class="card">
+                    <div class="head">
+                        <div class="circulo"></div>
+                        <div class="img">
+                            <img src="img/fotocv/galo_foto_perfil.png" alt="foto_de_perfil_galo">
+                        </div>
+                    </div>
+                    <div class="presentacion">
+                        <h3>Galo Olguin</h3>
+                        <h4>
+                            Programador BackEnd
+                        </h4>
+                        <p>¡Hola!<br>¿Querés una base de datos segura e interactiva?<br><br>Escribime y animate a
+                            empezar
+                        </p>
+                    </div>
+
+                    <div class="contacto">
+                        <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar
+                            CV</a>
                     </div>
                 </div>
-            <div class="presentacion">
-                <h3>Galo Olguin</h3>
-                <h4>
-                    Programador BackEnd
-                </h4>
-                <p>¡Hola!<br>¿Querés una base de datos segura e interactiva?<br><br>Escribime y animate a empezar</p>
-            </div>
-    
-            <div class="contacto">
-                <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar CV</a>
-            </div>
-        </div>
-    
-        <div class="card">
-            <div class="head">
-                <div class="circulo"></div>
-                    <div class="img">
-                        <img src="img/fotocv/emilia_foto_perfil.png" alt="foto_de_perfil_emilia">
+
+                <div class="card">
+                    <div class="head">
+                        <div class="circulo"></div>
+                        <div class="img">
+                            <img src="img/fotocv/emilia_foto_perfil.png" alt="foto_de_perfil_emilia">
+                        </div>
+                    </div>
+                    <div class="presentacion">
+                        <h3>Emilia Luif</h3>
+                        <h4>
+                            Programadora FrontEnd
+                        </h4>
+                        <p>¡Hola!<br>¿Querés un sitio profesional y fácil de usar?<br><br>Escribime y animate a
+                            digitalizarte</p>
+                    </div>
+
+                    <div class="contacto">
+                        <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar
+                            CV</a>
                     </div>
                 </div>
-            <div class="presentacion">
-                <h3>Emilia Luif</h3>
-                <h4>
-                    Programadora FrontEnd
-                </h4>
-                <p>¡Hola!<br>¿Querés un sitio profesional y fácil de usar?<br><br>Escribime y animate a digitalizarte</p>
-            </div>
-    
-            <div class="contacto">
-                <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar CV</a>
-            </div>
-        </div>
-    </section>
-        <section class="contenedor_cards2">
-            <div class="card">
-                <div class="head">
-                    <div class="circulo"></div>
+            </section>
+            <section class="contenedor_cards2">
+                <div class="card">
+                    <div class="head">
+                        <div class="circulo"></div>
                         <div class="img">
                             <img src="img/fotocv/mario_foto_perfil.png" alt="foto_de_perfil_mario">
                         </div>
                     </div>
-                <div class="presentacion">
-                    <h3>Mario Coria</h3>
-                    <h4>
-                        Analista de Ciberseguridad
-                    </h4>
-                    <p>¡Hola!<br>¿Buscas que tu sitio sea seguro y confiable?<br><br>Escribime y animate a la seguridad digital</p>
+                    <div class="presentacion">
+                        <h3>Mario Coria</h3>
+                        <h4>
+                            Analista de Ciberseguridad
+                        </h4>
+                        <p>¡Hola!<br>¿Buscas que tu sitio sea seguro y confiable?<br><br>Escribime y animate a la
+                            seguridad
+                            digital</p>
+                    </div>
+                    <div class="contacto">
+                        <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar
+                            CV</a>
+                    </div>
                 </div>
-                <div class="contacto">
-                    <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar CV</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="head">
-                    <div class="circulo"></div>
+                <div class="card">
+                    <div class="head">
+                        <div class="circulo"></div>
                         <div class="img">
                             <img src="img/fotocv/kevin_foto_perfil.png" alt="foto_de_perfil_kevin">
                         </div>
                     </div>
-                <div class="presentacion">
-                    <h3>Kevin Ari</h3>
-                    <h4>
-                        Administración de Empresas
-                    </h4>
-                    <p>¡Hola!<br>¿Buscas lograr el máximo beneficio de tu proyecto?<br><br>Escribime y animate a mejorar la productividad</p>
+                    <div class="presentacion">
+                        <h3>Kevin Ari</h3>
+                        <h4>
+                            Administración de Empresas
+                        </h4>
+                        <p>¡Hola!<br>¿Buscas lograr el máximo beneficio de tu proyecto?<br><br>Escribime y animate a
+                            mejorar
+                            la productividad</p>
+                    </div>
+                    <div class="contacto">
+                        <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar
+                            CV</a>
+                    </div>
                 </div>
-                <div class="contacto">
-                    <a href="https://drive.google.com/file/d/1BY-Ez4o3-iHIXMG8bd5IAWda7k_31DB1/view?usp=sharing">Visualizar CV</a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+    </div>
+    <!-- ACA EMPIEZA SERVICIOS -->
+    <div id="Servicios">
         <section class="dom-servicios">
             <div class="flex-titulo">
                 <div class="marco-servicios">
                     <h1 class="titulo-principal">¿Qué ofrecemos?</h1>
-                </div> 
-            </div>
-    
-                <div class="flex-srv">
-                    <div class="servicio-unico">
-                        <img  class="logos-servicios-base" src="img/logos-servicios/programacion-web.png" alt="">
-                        <h3 class="titulo-ind-srv">Programacion Web</h3>
-                        <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum nostrum possimus dolores asperiores placeat sunt quibusdam, eligendi minus eaque enim obcaecati dicta laudantium dignissimos aperiam harum at aliquam assumenda.</h5></div>
-                    <div class="servicio-unico">
-                        <img class="logos-servicios-2" src="img/logos-servicios/diseno-web.png" alt="">
-                        <h3 class="titulo-ind-srv">Diseno Web</h3>
-                        <h5 class="texto-srv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at, repudiandae soluta architecto dolorum voluptate reprehenderit dolore, porro dolores deserunt, exercitationem dicta? Itaque vel aut eos id quaerat quidem nobis.</h5></div>
-                    <div class="servicio-unico">
-                        <img class="logos-servicios-3" src="img/logos-servicios/wpo.png" alt="">
-                        <h3 class="titulo-ind-srv">WPO</h3>
-                        <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, tempora iste iusto reprehenderit ab pariatur fugiat architecto consequuntur nam cupiditate? Nam quis assumenda voluptate aliquam ipsam explicabo praesentium deserunt harum.</h5></div>
-                    <div class="servicio-unico">
-                        <img class="logos-servicios-base" src="img/logos-servicios/SEO.png" alt="">
-                        <h3 class="titulo-ind-srv">SEO</h3>
-                        <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda debitis obcaecati corporis maiores aliquam veniam itaque reprehenderit ratione iure fugit impedit et blanditiis amet, architecto rem. Quidem velit magni unde!</h5></div>
-                    <div class="servicio-unico">
-                        <img class="logos-servicios-5" src="img/logos-servicios/numeral.png" alt="">
-                        <h3 class="titulo-ind-srv">SMO</h3>
-                        <h5 class="texto-srv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quas modi earum dolor eaque mollitia natus quia voluptatem quod. Ipsum fugiat suscipit libero architecto voluptate repudiandae reiciendis quos, veritatis tenetur.</h5></div>
-                    <div class="servicio-unico">
-                        <img class="logos-servicios-6" src="img/logos-servicios/hosting.png" alt="">
-                        <h3 class="titulo-ind-srv">Web Hosting</h3>
-                        <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aut in soluta fuga quas iste repellendus sint unde. Placeat excepturi suscipit ipsa facere eum recusandae rerum hic consequatur ratione ipsum.</h5>
-                    </div>
-    
                 </div>
+            </div>
+
+            <div class="flex-srv">
+                <div class="servicio-unico">
+                    <img class="logos-servicios-base" src="img/logos-servicios/programacion-web.png" alt="">
+                    <h3 class="titulo-ind-srv">Programacion Web</h3>
+                    <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum nostrum
+                        possimus dolores asperiores placeat sunt quibusdam, eligendi minus eaque enim obcaecati dicta
+                        laudantium dignissimos aperiam harum at aliquam assumenda.</h5>
+                </div>
+                <div class="servicio-unico">
+                    <img class="logos-servicios-2" src="img/logos-servicios/diseno-web.png" alt="">
+                    <h3 class="titulo-ind-srv">Diseno Web</h3>
+                    <h5 class="texto-srv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at,
+                        repudiandae
+                        soluta architecto dolorum voluptate reprehenderit dolore, porro dolores deserunt, exercitationem
+                        dicta? Itaque vel aut eos id quaerat quidem nobis.</h5>
+                </div>
+                <div class="servicio-unico">
+                    <img class="logos-servicios-3" src="img/logos-servicios/wpo.png" alt="">
+                    <h3 class="titulo-ind-srv">WPO</h3>
+                    <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, tempora iste
+                        iusto
+                        reprehenderit ab pariatur fugiat architecto consequuntur nam cupiditate? Nam quis assumenda
+                        voluptate aliquam ipsam explicabo praesentium deserunt harum.</h5>
+                </div>
+                <div class="servicio-unico">
+                    <img class="logos-servicios-base" src="img/logos-servicios/SEO.png" alt="">
+                    <h3 class="titulo-ind-srv">SEO</h3>
+                    <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda debitis
+                        obcaecati corporis maiores aliquam veniam itaque reprehenderit ratione iure fugit impedit et
+                        blanditiis amet, architecto rem. Quidem velit magni unde!</h5>
+                </div>
+                <div class="servicio-unico">
+                    <img class="logos-servicios-5" src="img/logos-servicios/numeral.png" alt="">
+                    <h3 class="titulo-ind-srv">SMO</h3>
+                    <h5 class="texto-srv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quas modi earum
+                        dolor eaque mollitia natus quia voluptatem quod. Ipsum fugiat suscipit libero architecto
+                        voluptate
+                        repudiandae reiciendis quos, veritatis tenetur.</h5>
+                </div>
+                <div class="servicio-unico">
+                    <img class="logos-servicios-6" src="img/logos-servicios/hosting.png" alt="">
+                    <h3 class="titulo-ind-srv">Web Hosting</h3>
+                    <h5 class="texto-srv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aut in soluta
+                        fuga
+                        quas iste repellendus sint unde. Placeat excepturi suscipit ipsa facere eum recusandae rerum hic
+                        consequatur ratione ipsum.</h5>
+                </div>
+
+            </div>
         </section>
         <!--<section class="testimonios">
         
@@ -250,34 +301,43 @@
             </button>
             </div>
             </section> -->
-            <section class="oportunidades">
-                <div class="titulo-oportunidades">
-                    <h1>Oportunidades</h1>
-                </div>
-                <div class="intro-oportunidades">En <strong class="strong-marca">animate</strong> creemos en la retroalimentación y en el buen karma, es por eso que trabajamos para acercarte todas las ofertas académicas en un solo lugar y puedas iniciarte en el mundo de la tecnología vos mismo</div>
-                <article class="ofertas"> 
-                    <h1>Fundación Pescar</h1>
-                    <h2>Actualmente ofrecen becas completas en programación Full Stack y Habilidades Blandas para una rápida inserción laboral</h2>
-                    <h3>Inscripciones Abiertas</h3>
-                    <a class="boton" href="http://www.pescar.org.ar/wp/">Ver más</a>
-                </article> 
-                <article class="ofertas"> 
-                    <h1>Santander Rio</h1>
-                    <h2>Actualmente ofrecen becas completas en programación Full Stack y Habilidades Blandas para una rápida inserción laboral</h2>
-                    <h3>Inscripciones Abiertas</h3>
-                    <a class="boton" href="#">Ver más</a>
-                </article> 
-                <article class="ofertas"> 
-                    <h1>Codo a Codo</h1>
-                    <h2>Actualmente ofrecen becas completas en programación Full Stack </h2>
-                    <h3>Inscripciones Abiertas</h3>
-                    <a class="boton" href="#">Ver más</a>
-                </article> 
-            </section> 
-            <h1 class="contacto-titulo">¿Interesado?</h1>
+    </div>
+    <!-- ACÁ EMPIEZA OPORTUNIDADES -->
+    <section class="oportunidades">
+        <div class="titulo-oportunidades">
+            <h1>Oportunidades</h1>
+        </div>
+        <div class="intro-oportunidades">En <strong class="strong-marca">animate</strong> creemos en la
+            retroalimentación y en el buen karma, es por eso que trabajamos para acercarte todas las ofertas
+            académicas
+            en un solo lugar y puedas iniciarte en el mundo de la tecnología vos mismo</div>
+        <article class="ofertas">
+            <h1>Fundación Pescar</h1>
+            <h2>Actualmente ofrecen becas completas en programación Full Stack y Habilidades Blandas para una rápida
+                inserción laboral</h2>
+            <h3>Inscripciones Abiertas</h3>
+            <a class="boton" href="http://www.pescar.org.ar/wp/">Ver más</a>
+        </article>
+        <article class="ofertas">
+            <h1>Santander Rio</h1>
+            <h2>Actualmente ofrecen becas completas en programación Full Stack y Habilidades Blandas para una rápida
+                inserción laboral</h2>
+            <h3>Inscripciones Abiertas</h3>
+            <a class="boton" href="#">Ver más</a>
+        </article>
+        <article class="ofertas">
+            <h1>Codo a Codo</h1>
+            <h2>Actualmente ofrecen becas completas en programación Full Stack </h2>
+            <h3>Inscripciones Abiertas</h3>
+            <a class="boton" href="#">Ver más</a>
+        </article>
+    </section>
+
+    <!-- ACÁ EMPIEZA CONTACTO -->
+    <h1 class="contacto-titulo">¿Interesado?</h1>
     <div class="contacto-contenedor">
         <a class="contacto-seccion">
-        <div class="mini-contenedor">
+            <div class="mini-contenedor">
                 <p><img src="img/iconos-contacto/homehome.png"></p>
                 <p class="titulo-seccion">UBICACION</p>
                 <p>Buenos Aires, Argentina</p>
@@ -312,21 +372,22 @@
     </div>
     <div class="contenedor-texto">
         <div class="labels-top">
-        <label for="nombre"></label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre *" required >
-        </label>
-        <label for="email"></label>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre *" required>
+            </label>
+            <label for="email"></label>
             <input type="email" name="email" id="email" placeholder="Ingresa tu correo *" required>
-        </label>
+            </label>
         </div>
         <label for="texto"></label>
-            <textarea class="label-texto" id="texto" placeholder="Dejame tus comentarios... *" required></textarea>
+        <textarea class="label-texto" id="texto" placeholder="Dejame tus comentarios... *" required></textarea>
         </label>
         <button class="boton-enviar">ENVIAR MENSAJE</button>
     </div>
-</main>
-<footer>
-    <p class="footer-texto">&copy; Sitio diseñado por @animate_agencia</p>
-</footer>
+    </main>
+    <footer>
+        <p class="footer-texto">&copy; Sitio diseñado por @animate_agencia</p>
+    </footer>
 </body>
+
 </html>
