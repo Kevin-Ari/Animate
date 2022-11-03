@@ -28,7 +28,8 @@
     height: 72vh;
     background-attachment: fixed;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-size: cover;
 }
@@ -38,12 +39,9 @@
     padding: 0;
     color: var(--color-blanco2);
     font-family: 'Raleway', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-size: clamp(44px, 1.5vw, 64px);
-}
-
-.home-subtitulo {
-    color: var(--color-blanco2);
+    margin-top: 30vh;
 }
 
 .home-btn {
@@ -60,19 +58,31 @@
 
 .home-centro {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 60%;
     margin-left: 150px;
+    text-align: center;
 }
 .servicio1{
     padding-left: 2em;
     padding-right: 2em;
 }
 
-.home-img {
-    margin-left: 50px;
+.contenedor-button {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.boton-home {
+    color: white;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--color-btn);
+    padding: 18px;
+    width: 20vw;
+    cursor: pointer;
 }
 
 /* -- QUIENES SOMOS -- */ 
