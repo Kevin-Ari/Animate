@@ -619,11 +619,15 @@ article > h3 {
 
 /*PARTE DE EMILIA */ 
 .contacto-main {
-    display: flex;
+    position: static;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 97vh;
+    margin-top: 15px;
+    width: 97vw;
+    text-align: center;
+    gap: 50px;
 }
 
 .contacto-titulo {
@@ -635,7 +639,7 @@ article > h3 {
     line-height: 2;
 }
 
-.contacto-contenedor {
+/* .contacto-contenedor {
     margin-top: 15px;
     display: flex;
     justify-content: space-around;
@@ -644,7 +648,7 @@ article > h3 {
     text-align: center;
     gap: 50px;
 }
-
+*/
 .contenedor-titulo {
     text-align: center;
     width: 50vw;
