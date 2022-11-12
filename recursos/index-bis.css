@@ -35,6 +35,7 @@
     /* Falta centrar la foto más arriba */
 }
 
+
 .home-titulo {
     margin: 0;
     padding: 0;
@@ -619,15 +620,14 @@ article > h3 {
 
 /*PARTE DE EMILIA */ 
 .contacto-main {
-    position: static;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 97vh;
-    margin-top: 15px;
-    width: 97vw;
+    margin-top: 100px;
     text-align: center;
-    gap: 50px;
+    min-width: 50vw;
 }
 
 .contacto-titulo {
@@ -639,36 +639,44 @@ article > h3 {
     line-height: 2;
 }
 
-/* .contacto-contenedor {
+.contacto-contenedor {
     margin-top: 15px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 97vw;
     text-align: center;
     gap: 50px;
 }
-*/
-.contenedor-titulo {
-    text-align: center;
-    width: 50vw;
-    font-size: 25px;
-    font-weight: 900;
-    color: white;
+
+.contenedor-tel-mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contacto-seccion {
     text-align: center;
-    width: 21vw;
     display: flex;
-    box-shadow: 10px 15px 25px 10px rgba(76, 76, 78, 0.2);
-    border-radius: 9px;
-    flex-direction: column;
+    flex-direction: row;
     cursor: pointer;
-}
+    gap: 50px;
+} 
 
 .mini-contenedor {
     text-align: center;
+    border: 2px solid var(--color-sec);
+    border-radius: 15px;
+    margin-bottom: 55px;
+    width: 12.5vw;
+}
+
+.map {
+    width: 28vw;
+    border-radius: 15px;
+    border: 2px solid var(--color-sec);
+    max-height: 550px;
 }
 
 .titulo-seccion {
@@ -690,12 +698,17 @@ article > h3 {
 
 .contenedor-texto {
     box-shadow:  10px 15px 25px 10px rgba(76, 76, 78, 0.2);
-    border: 5px solid black;
+    border: 5px solid var(--color-sec);
     border-radius: 15px;
-    background-image: url(../img/iconos-contacto/foto-tel.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(113, 135, 245, 0.7),
+        rgba(118, 114, 117, 0.7)
+      ),url(../img/iconos-contacto/fondoContacto.jpg);
     background-size: cover;
     margin-top: 20px;
-    max-width: 60vw;
+    max-width: 30vw;
+    max-height: 535px;
     padding: 65px;
     display: flex;
     flex-direction: column;
@@ -705,49 +718,140 @@ article > h3 {
 
 .contenedor-texto input{
     font-size: 20px;
-    width: 60vw;
     border: none;
     border-bottom: 3px solid rgb(96, 96, 96);
     line-height: 2;
-    border-radius: 10px;
+    border-radius: 30px;
 }
-.labels-top {
-    display: flex;
-    gap: 5px;
-    width: 51vw;
-    padding: 5px;
+
+.contenedor-titulo {
+    text-align: center;
+    width: 35vw;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.input-nombre {
+    width: 29vw;
+    padding-left: 15px;
     border: none;
+}
+
+.labels-medio{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content:space-around;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.input-medio {
+    width: 13vw;
+    padding-left: 15px;
+}
+
+.dropdown {
+    width: 30vw;
+    padding-left: 10px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    border-bottom: 3px solid rgb(96, 96, 96);
+    color: #5c5c5c;
+    height: 40px;
 }
 
 .label-texto {
     font-size: 20px;
     border: 3px solid rgb(96, 96, 96);
     padding: 10px;
-    margin: 15px;
-    margin-bottom: 25px;
-    width: 50vw;
-    height: 30vh;
-    border-radius: 10px;
+    margin-top: 20px;
+    width: 29vw;
+    height: 20vh;
+    border-radius: 30px;
 }
 
 .boton-enviar {
     color: white;
     border:none;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: var(--color-btn);
     padding: 18px;
-    margin-bottom: 15px;
+    margin-top: 30px;
     width: 12vw;
     cursor: pointer;
 }
 
-footer {
+.contenedor-footer-1 {
+    width: 25vw;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.footer-logo-animate {
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--color-btn);
+    margin: 10px 20px;
+}
+
+.lista-footer {
+    list-style: none;
+}
+
+.icono-footer-1{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.contenedor-footer-2 {
+    width: 25vw;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contenedor-2-titulo {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.lista-footer-2{
+    margin-top: 15px;
+}
+
+.contenedor-footer-3{
+    width: 25vw;
+}
+
+.contenedor-3-titulo {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.img-factura-c {
+    max-width: 350px;
+    max-height: 400px;
+    margin-left: 30px;
+}
+ /* ME FALTA TERMINAR ACÁ */
+.contenedor-copyright {
+
+}
+.footer {
+    display: flex;
+    flex-direction: row;
     margin-top: 50px;
-    text-align: center;
     height: 50vh;
-    color: white;
     width: 100%;
     background-color: var(--color-footer);
+    gap: 350px;
 }
 
 .footer-texto {

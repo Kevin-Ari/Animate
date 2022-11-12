@@ -343,83 +343,84 @@
                 </div>
                 <div class="label-nombre">
                     <label for="nombre">
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo *"
-                            required>
+                        <input class="input-nombre" type="text" name="nombre" id="nombre"
+                            placeholder="Ingrese su nombre completo *" required>
                     </label>
                 </div>
                 <div class="labels-medio">
                     <label for="email">
-                        <input type="email" name="email" id="email" placeholder="Ingrese su correo *" required>
+                        <input class="input-medio" type="email" name="email" id="email"
+                            placeholder="Ingrese su correo *" required>
                     </label>
                     <label for="telefono">
-                        <input type="number" name="telefono" id="telefono" placeholder="Ingrese su telefono *" required>
+                        <input class="input-medio" type="tel" name="telefono" id="telefono"
+                            placeholder="Ingrese su telefono *" required>
                     </label>
                 </div>
                 <div class="dropdown-motivo">
                     <label for="motivo">
                         <select class="dropdown" name="motivo" required>
                             <option value="" selected>Seleccione el motivo</option>
-                            <option value=""></option>
-                            <option></option>
-                            <option></option>
+                            <option value="">Quiero potenciar mi página</option>
+                            <option value="">Quiero digitalizar mi emprendimiento</option>
+                            <option value="">Otros</option>
                         </select>
                     </label>
-
                 </div>
                 <label for="texto">
                     <textarea class="label-texto" id="texto" placeholder="Escriba su consulta *" required></textarea>
                 </label>
                 <button class="boton-enviar">ENVIAR MENSAJE</button>
             </div>
-        <div class="contenedor-tel-mapa">
-            <a class="contacto-seccion">
-                <div class="mini-contenedor">
-                    <p><img src="img/iconos-contacto/phone.png"></p>
-                    <p class="titulo-seccion">TELEFONO</p>
-                    <p>(+54) 1139116748</p>
+            <div class="contenedor-tel-mapa">
+                <a class="contacto-seccion">
+                    <div class="mini-contenedor">
+                        <p><img src="img/iconos-contacto/phone.png"></p>
+                        <p class="titulo-seccion">TELEFONO</p>
+                        <p>(+54) 1139116748</p>
+                    </div>
+                    <div class="mini-contenedor">
+                        <p><img src="img/iconos-contacto/envelope.png"></p>
+                        <p class="titulo-seccion">EMAIL</p>
+                        <p>contacto@animate.com</p>
+                    </div>
+                </a>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2548657348316!2d-58.379070584354295!3d-34.64826588044798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb522cff3569%3A0x2ae285e31e7380fd!2sCalifornia%202082%2C%20C1289AAP%20CABA!5e0!3m2!1ses!2sar!4v1667918009651!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
                 </div>
-            </a>
-            <a class="contacto-seccion">
-                <div class="mini-contenedor">
-                    <p><img src="img/iconos-contacto/envelope.png"></p>
-                    <p class="titulo-seccion">EMAIL</p>
-                    <p>contacto@animate.com</p>
-                </div>
-            </a>
-            <div class="mapa">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2548657348316!2d-58.379070584354295!3d-34.64826588044798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb522cff3569%3A0x2ae285e31e7380fd!2sCalifornia%202082%2C%20C1289AAP%20CABA!5e0!3m2!1ses!2sar!4v1667918009651!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
         </div>
     </section>
     </main>
     <footer>
-        <div class="contenedor-footer-1">
-            <p>animate</p>
-            <ul>
-                <li><img src="img/iconos-contacto/ubicación.png">California 2082, C.A.B.A</li>
-                <li><img src="img/iconos-contacto/whatsapp.png">11-3911-6748</li>
-                <li><img src="img/iconos-contacto/instagram.png">animate_digital</li>
-                <li><img src="img/iconos-contacto/youtube.png">Animate Agencia Digital</li>
-            </ul>
-        </div>
-        <div class="contenedor-footer-2">
-            <p>Nuestros servicios</p>
-            <ul>
-                <li><a>Programación</a></li>
-                <li><a>Diseño Web</a></li>
-                <li><a>WPO</a></li>
-                <li><a>SEO</a></li>
-                <li><a>SMO</a></li>
-                <li><a>Web Hosting</a></li>
-            </ul>
-        </div>
-        <div class="contenedor-footer-3">
-            <p>Entregamos factura "C"</p>
-            <img src="img/iconos-contacto/dataFiscal.png">
+        <div class="footer">
+            <div class="contenedor-footer-1">
+                <p class="footer-logo-animate">animate</p>
+                <ul class="lista-footer">
+                    <li><img src="img/iconos-contacto/ubicación.png" class="icono-footer-1">California 2082, C.A.B.A</li>
+                    <li><img src="img/iconos-contacto/whatsapp.png" class="icono-footer-1">11-3911-6748</li>
+                    <li><img src="img/iconos-contacto/instagram.png" class="icono-footer-1">animate_digital</li>
+                    <li><img src="img/iconos-contacto/youtube.png" class="icono-footer-1">Animate Agencia Digital</li>
+                </ul>
+            </div>
+            <div class="contenedor-footer-2">
+                <p class="contenedor-2-titulo">Nuestros servicios</p>
+                <ul>
+                    <li class="lista-footer-2"><a >Programación</a></li>
+                    <li class="lista-footer-2"><a >Diseño Web</a></li>
+                    <li class="lista-footer-2"><a >WPO</a></li>
+                    <li class="lista-footer-2"><a >SEO</a></li>
+                    <li class="lista-footer-2"><a >SMO</a></li>
+                    <li class="lista-footer-2"><a >Web Hosting</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-footer-3">
+                <p class="contenedor-3-titulo">Entregamos factura "C"</p>
+                <img src="img/iconos-contacto/dataFiscal.png" class="img-factura-c">
+            </div>
         </div>
         <div class="contenedor-copyright">
             <p class="footer-texto">&copy; Copyright Animate Digital - 2022 - Todos los derechos reservados</p>
