@@ -23,6 +23,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.strong-marca {
+    color: var(--color-btn);
+    font-weight: 700;
+}
 /* -- HEADER -- */
 
 .header {
@@ -192,7 +196,7 @@
     position: relative;
     width: 300px;
     height: 450px;
-    background: #FFFFFF;
+    background: var(--color-blanco2);
     border-radius: 25px;
     overflow: hidden;
     transition: .5s;
@@ -201,21 +205,23 @@
 }
 
 
-
 .card:hover {
     box-shadow: 0 5px 15px rgba (3, 89, 92, .5);
     transform: translateY(-15px);
     background: var(--color-sec);
-    color: #ffffff;
+    color: var(--color-blanco2);
 }
 
-.card .head {
+.card:hover h3 {
+    color: var(--color-blanco2);
+}
+
+.card-ind {
     height: 125px;
     width: 100%;
     position: relative;
 }
-
-.card .head .circulo {
+.circulo {
     position: absolute;
     width: 300px;
     height: 300px;
@@ -225,7 +231,7 @@
     transform: translate(-0.5%);
 }
 
-.card .head .img {
+.card-ind .img-cv {
     width: 150px;
     position: absolute;
     background: #ffffff;
@@ -236,11 +242,17 @@
     transform: translate(-50%);
 }
 
-.card .head .img img {
+.card .card-ind .img-cv img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.card .card-ind {
+    height: 125px;
+    width: 100%;
+    position: relative;
 }
 
 .card .presentacion {
@@ -250,7 +262,7 @@
     border-bottom: solid 1px rgba(6. 74. 76, .18);
     text-align: center;
 }
-
+/*
 .card .presentacion h3 {
     color: var(--color-sec);
 }
@@ -258,7 +270,7 @@
 .card .presentacion h3:hover {
     color: #FFFFFF;
 
-}
+} */
 
 /*no se como poner el nombre en blanco, es el h3*/
 
@@ -593,25 +605,10 @@ body{
     align-items: center;
 }
 
-.titulo-oportunidades {
-    text-align: center;
-    width: 30vw;
-    color: var(--color-sec);
-    border-top: 3px solid var(--color-btn);
-    border-bottom: 3px solid var(--color-btn);
-    line-height: 2;
-    margin: 3vw;
-}
-
 .intro-oportunidades {
     text-align: center;
     margin: 2vw;
     font-size: 20px;
-}
-
-.strong-marca {
-    color: var(--color-btn);
-    font-weight: 700;
 }
 
 .ofertas {
@@ -622,11 +619,26 @@ body{
     color: var(--color-sec);
     border-width: 3px;
     border-style: solid;
-    border-color: var(--color-btn);
+    border-color: var(--color-sec);
     margin: 10px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 25px;
     width: 50vw;
+}
+
+.ofertas:hover {
+    background-color: var(--color-sec);
+    color: var(--color-blanco2);
+}
+.ofertas:hover h2 {
+    background-color: var(--color-sec);
+    color: var(--color-blanco2);
+}
+.img-org img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 article>h2 {
@@ -643,7 +655,6 @@ article>h3 {
 .boton {
     text-decoration: none;
     color: white;
-    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     background-color: var(--color-btn);
     padding: 5px;
@@ -656,6 +667,7 @@ article>h3 {
     color: var(--color-btn);
     background-color: white;
 }
+
 
 /* hasta aca la parte de oportunidades Ana*/
 
