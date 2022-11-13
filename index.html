@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     
 
     <link rel="stylesheet" href="css/index.css">
@@ -96,17 +97,18 @@
             <div class="card">
                 <div class="head">
                     <div class="circulo"></div>
-                        <div class="img">
-                            <img src="img/fotocv/ana_foto_perfil.png" alt="foto_de_perfil_ana">
-                        </div>
+                    <div class="img">
+                        <img src="img/fotocv/ana_foto_perfil.png" alt="foto_de_perfil_ana">
+                    </div>
                 </div>
                 <div class="presentacion">
                     <h3>Ana Laura Mercado</h3>
                     <h4>Diseñadora Grafica Digital</h4>
-                    <p>¡Hola!
+                    <p>
+                        ¡Hola!
                         <br>
                         ¿Tenes una idea pero no sabes si es posible?
-                        <br><br>
+                        <br>
                         Escribime y animate a hacerla realidad
                     </p>
                 </div>
@@ -274,7 +276,8 @@
                 </div>
         </section>
     </section>
-        <!--<section class="testimonios">
+
+        <!-- <section class="testimonios">
         
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         
@@ -337,66 +340,68 @@
     </section>
 
     <!-- ACÁ EMPIEZA CONTACTO -->
-    <section class="contacto-main" id="Contacto">
-        <p class="titulos">¿Interesado?</p>
-        <div class="contacto-contenedor">
-            <div class="contenedor-texto">
-                <div class="contenedor-titulo">
-                    <p>Completá tus datos y nos contactaremos a la brevedad</p>
-                </div>
-                <div class="label-nombre">
-                    <label for="nombre">
-                        <input class="input-nombre" type="text" name="nombre" id="nombre"
-                            placeholder="Ingrese su nombre completo *" required>
-                    </label>
-                </div>
-                <div class="labels-medio">
-                    <label for="email">
-                        <input class="input-medio" type="email" name="email" id="email"
-                            placeholder="Ingrese su correo *" required>
-                    </label>
-                    <label for="telefono">
-                        <input class="input-medio" type="tel" name="telefono" id="telefono"
-                            placeholder="Ingrese su telefono *" required>
-                    </label>
-                </div>
-                <div class="dropdown-motivo">
-                    <label for="motivo">
-                        <select class="dropdown" name="motivo" required>
-                            <option value="" selected>Seleccione el motivo</option>
-                            <option value="">Quiero potenciar mi página</option>
-                            <option value="">Quiero digitalizar mi emprendimiento</option>
-                            <option value="">Otros</option>
-                        </select>
-                    </label>
-                </div>
-                <label for="texto">
-                    <textarea class="label-texto" id="texto" placeholder="Escriba su consulta *" required></textarea>
-                </label>
-                <button class="boton-enviar">ENVIAR MENSAJE</button>
-            </div>
-            <div class="contenedor-tel-mapa">
-                <a class="contacto-seccion">
-                    <div class="mini-contenedor">
-                        <p><img src="img/iconos-contacto/phone.png"></p>
-                        <p class="titulo-seccion">TELEFONO</p>
-                        <p>(+54) 1139116748</p>
+<section id="Contacto">
+    <p class="titulos">¿Interesado?</p>
+        <div class="contacto-main">
+            <div class="contacto-contenedor">
+                <div class="contenedor-texto">
+                    <div class="contenedor-titulo">
+                        <p>Completá tus datos y nos contactaremos a la brevedad</p>
                     </div>
-                    <div class="mini-contenedor">
-                        <p><img src="img/iconos-contacto/envelope.png"></p>
-                        <p class="titulo-seccion">EMAIL</p>
-                        <p>contacto@animate.com</p>
+                    <div class="label-nombre">
+                        <label for="nombre">
+                            <input class="input-nombre" type="text" name="nombre" id="nombre"
+                                placeholder="Ingrese su nombre completo *" required>
+                        </label>
                     </div>
-                </a>
-                <div class="mapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2548657348316!2d-58.379070584354295!3d-34.64826588044798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb522cff3569%3A0x2ae285e31e7380fd!2sCalifornia%202082%2C%20C1289AAP%20CABA!5e0!3m2!1ses!2sar!4v1667918009651!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    <div class="labels-medio">
+                        <label for="email">
+                            <input class="input-medio" type="email" name="email" id="email"
+                                placeholder="Ingrese su correo *" required>
+                        </label>
+                        <label for="telefono">
+                            <input class="input-medio" type="tel" name="telefono" id="telefono"
+                                placeholder="Ingrese su telefono *" required>
+                        </label>
+                    </div>
+                    <div class="dropdown-motivo">
+                        <label for="motivo">
+                            <select class="dropdown" name="motivo" required>
+                                <option value="" selected>Seleccione el motivo</option>
+                                <option value="">Quiero potenciar mi página</option>
+                                <option value="">Quiero digitalizar mi emprendimiento</option>
+                                <option value="">Otros</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label for="texto">
+                        <textarea class="label-texto" id="texto" placeholder="Escriba su consulta *" required></textarea>
+                    </label>
+                    <button class="boton-enviar">ENVIAR MENSAJE</button>
+                </div>
+                <div class="contenedor-tel-mapa">
+                    <a class="contacto-seccion">
+                        <div class="mini-contenedor">
+                            <p><img src="img/iconos-contacto/phone.png"></p>
+                            <p class="titulo-seccion">TELEFONO</p>
+                            <p>(+54) 1139116748</p>
+                        </div>
+                        <div class="mini-contenedor">
+                            <p><img src="img/iconos-contacto/envelope.png"></p>
+                            <p class="titulo-seccion">EMAIL</p>
+                            <p>contacto@animate.com</p>
+                        </div>
+                    </a>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2548657348316!2d-58.379070584354295!3d-34.64826588044798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb522cff3569%3A0x2ae285e31e7380fd!2sCalifornia%202082%2C%20C1289AAP%20CABA!5e0!3m2!1ses!2sar!4v1667918009651!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+</section>
     <footer>
         <div class="footer">
             <div class="contenedor-footer-1">
@@ -432,6 +437,7 @@
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/7a92306946.js" crossorigin="anonymous"></script>
     <script src="js/nav.js" defer=""></script>
+    <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>

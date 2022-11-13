@@ -43,4 +43,5 @@ section[id]{
     border-bottom: 3px solid var(--color-btn);
     color: var(--color-sec);
     line-height: 2.5;
+    margin: 2rem 0 2rem 0;
 }

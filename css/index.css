@@ -15,7 +15,7 @@
     --color-: #FFFFFF;
     --color-: #000000;
 
-    --fonts-titulo : 700 1.5vw 'raleway',sans-serif; 
+    --fonts-titulo : 700 2.5vw 'raleway',sans-serif; 
 }
 
 
@@ -84,6 +84,7 @@
     align-items: center;
     background-size: cover;
     background-position: center;
+
     /* Falta centrar la foto más arriba */
 }
 
@@ -196,7 +197,7 @@
     overflow: hidden;
     transition: .5s;
     border: 2px solid var(--color-sec);
-    margin: 10px 0px 10px 70px;
+    margin: 10px 0px 0px 70px;
 }
 
 
@@ -307,7 +308,6 @@
 .dom-servicios {
     position: static;
     background-color: var(--color-fondo);
-    padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     margin: 0 auto;
 }
@@ -454,7 +454,7 @@
 }
 
 /*---------------------VISTA grande-------------------*/
-@media screen and (min-width:1703px) {
+@media screen and (min-width:1200px) {
     .flex-srv {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -685,6 +685,12 @@ article>h3 {
 /* hasta aca la parte de oportunidades Ana*/
 
 /*PARTE DE EMILIA */
+#Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contacto-main {
     display: flex;
     flex-direction: column;
@@ -696,14 +702,7 @@ article>h3 {
     min-width: 50vw;
 }
 
-.contacto-titulo {
-    text-align: center;
-    width: 30vw;
-    color: var(--color-btn);
-    border-top: 3px solid var(--color-btn);
-    border-bottom: 3px solid var(--color-btn);
-    line-height: 2;
-}
+
 
 .contacto-contenedor {
     margin-top: 15px;
@@ -916,6 +915,7 @@ article>h3 {
     width: 100%;
     background-color: var(--color-footer);
     gap: 350px;
+    overflow: hidden;
 }
 
 .footer-texto {
