@@ -28,7 +28,7 @@
 .header {
     width: 100vw;
     height: 8vh;
-    background-color: var(--color-fondo-nav);
+    background-color: var(--color-sec);
     display: flex;
     color: var(--color-nav);
     justify-content: space-between;
@@ -454,7 +454,7 @@
 }
 
 /*---------------------VISTA grande-------------------*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width:900px) {
     .flex-srv {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -691,26 +691,8 @@ article>h3 {
     align-items: center;
 }
 
-.contacto-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 97vh;
-    margin-top: 100px;
-    text-align: center;
-    min-width: 50vw;
-}
-
-
-
 .contacto-contenedor {
-    margin-top: 15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
     gap: 50px;
 }
 
