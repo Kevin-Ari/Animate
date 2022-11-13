@@ -34,3 +34,13 @@ html{
 section[id]{
     scroll-margin-top: 8vh;
 }
+
+.titulos {
+    font: var(--fonts-titulo);
+    max-width: 35vw;
+    text-align: center;
+    border-top: 3px solid var(--color-btn);
+    border-bottom: 3px solid var(--color-btn);
+    color: var(--color-sec);
+    line-height: 2.5;
+}
