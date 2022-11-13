@@ -21,23 +21,29 @@ botonNav.addEventListener('click', () => {
     }
 })
 //SUBMENU DESPLEGABLE
-/*
+
 const subMenuBtn = document.querySelectorAll('.submenu-btn');
+console.log(window.innerWidth)
 for (let i=0; i < subMenuBtn.length; i++) {
     subMenuBtn[i].addEventListener('click', function() {
         if(window.innerWidth < 870){
             const submenu = this.nextElementSibling;
             const height = submenu.scrollHeight;
 
-           // if (submenu.clasList.contains('desplegar')){
-          //      submenu.clasList.remove('desplegar');
-            //    submenu.removeAtribute('style');
-          //  } else {
-           //     submenu.clasList.add('desplegar');
+            if (submenu.clasList.contains('desplegar')){
+                submenu.clasList.remove('desplegar');
+                submenu.removeAtribute('style');
+            } else {
+                submenu.clasList.add('desplegar');
                 submenu.style.height = height + "px";
-           // }
+            }
             
         }
     });
 }
-*/
+/* Definir los clases style y desplegar */
+//Cambio de imagenes
+var imgHover = "programacion-web-hover.png";
+
+
+
