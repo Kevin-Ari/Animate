@@ -444,8 +444,8 @@ body{
         padding: 1vw 4.5vw 1vw 4.5vw;
         color: var(--color-fondo);
         font-size: 1.3vh;
-
     }
+    
     .link-submenu{
         padding-right: 5em;
         padding-left: 3em;
@@ -531,6 +531,7 @@ body{
         background-image: url('../img/MenuMobile2SVG.svg');
     }
 }
+
 /*------------------------SUBMENU----------------------*/
 /*MENU DESPLEGABLE*/
     .container-submenu{
