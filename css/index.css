@@ -12,7 +12,7 @@
     --color-: #222222;
     --color-footer: #501464;
     --color-: #333333;
-    --color-: #FFFFFF;
+    --color-blanco: #FFFFFF;
     --color-: #000000;
 
     --fonts-titulo : 700 2.5vw 'raleway',sans-serif; 
@@ -96,7 +96,7 @@
 .home-titulo {
     margin: 0;
     padding: 0;
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: clamp(44px, 1.5vw, 64px);
@@ -105,7 +105,7 @@
 
 .home-btn {
     background-color: var(--color-btn);
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: clamp(24px, 1.5vw, 48px);
@@ -136,7 +136,7 @@
 }
 
 .boton-home {
-    color: white;
+    color: var(--color-blanco);
     border: none;
     border-radius: 10px;
     background-color: var(--color-btn);
@@ -196,7 +196,7 @@
     position: relative;
     width: 300px;
     height: 450px;
-    background: var(--color-blanco2);
+    background: var(--color-blanco);
     border-radius: 25px;
     overflow: hidden;
     transition: .5s;
@@ -209,11 +209,11 @@
     box-shadow: 0 5px 15px rgba (3, 89, 92, .5);
     transform: translateY(-15px);
     background: var(--color-sec);
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
 }
 
 .card:hover h3 {
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
 }
 
 .card-ind {
@@ -234,7 +234,7 @@
 .card-ind .img-cv {
     width: 150px;
     position: absolute;
-    background: #ffffff;
+    background: var(--color-blanco);
     padding: 5px;
     border-radius: 50%;
     bottom: -30%;
@@ -295,7 +295,7 @@
 
 .card .contacto a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-blanco);
     background: var(--color-sec);
     padding: 5px 20px;
     border-radius: 5px;
@@ -304,7 +304,7 @@
 }
 
 .card .contacto a:hover {
-    background: white;
+    background: var(--color-blanco);
     color: var(--color-sec);
 }
 /*---------------------------------------------Servicios---------------------------------------------*/
