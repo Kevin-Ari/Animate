@@ -320,8 +320,6 @@ body{
 .dom-servicios{
     position: static;
     background-color: var(--color-fondo);
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
     margin: 0 auto;
 }
 /*MARCO QUE OFRECEMOS*/
@@ -560,7 +558,6 @@ body{
         background-color: var(--color-borde);
     }
     .lista-item{
-        width: 100%;
         margin: 0;
     }
 /* parte de galo, no entendimos nada */
