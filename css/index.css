@@ -15,7 +15,12 @@
     --color-blanco: #FFFFFF;
     --color-: #000000;
 
-    --fonts-titulo : 700 2.5vw 'raleway',sans-serif; 
+    --fonts-titulo : 700 2.5vw 'raleway',sans-serif;
+    --font-nombres : 600 1.5vw 'raleway',sans-serif;
+    --font-puesto : 400 1vw 'raleway' ,sans-serif;
+    --font-texto: 600 1vw 'raleway', sans-serif;
+
+    --fondo-Testimonios : url(../img/Testimonios/testimonios.jpg)
 }
 
 .strong-marca {
@@ -622,8 +627,9 @@ body{
     margin: 0;
 }
 
-
-
+.nav__lista {
+    margin-top: 16px;
+}
 /* parte de galo, no entendimos nada */
 .testimonios {
     background-image: url(../img/Testimonios/testimonios.jpg);
@@ -720,6 +726,148 @@ article>h3 {
 }
 
 /* hasta aca la parte de oportunidades Ana*/
+
+/* TESTIMONIOS */
+
+#Opiniones{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opinion__contenedor{
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    box-shadow: 10px 15px 25px 10px rgba(57, 57, 60, 0.2);
+    border-radius: 16px;
+}
+
+.opinion__caja{
+    height: 400px;
+    min-height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -100%;
+
+}
+
+.opinion__caja__seccion{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 4rem;
+}
+
+.__seccion__img{
+    width: 15%;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.__seccion__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.__seccion__texto{
+    max-height: 190px;
+    padding: .5rem;
+    margin: 0;
+    font: var(--font-texto);
+    overflow: scroll;
+    text-align: center;
+}
+
+.__seccion__texto::-webkit-scrollbar {
+    width: 5px;
+    /* Tamaño del scroll en vertical */
+    height: 0px;
+    /* Tamaño del scroll en horizontal */
+    /* Ocultar scroll */
+}
+
+.__seccion__texto::-webkit-scrollbar-thumb {
+    background: var(--color-btn);
+    border-radius: 4px;
+}
+
+.__seccion__nombre{
+    font: var(--font-nombres);
+    color: var(--color-btn);
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.__seccion__puesto{
+    padding: 0;
+    margin: 0;
+    font: var(--font-puesto);
+    color: var(--color-hoover);
+}
+
+.__seccion__btn{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-btn);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--color-blanco2);
+    font: var(--font-puesto);
+}
+
+.botonera {
+    display: flex;
+}
+
+.__caja__btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-sec);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+
+.__caja__btn:hover{
+    background-color: var(--color-sec);
+    color: var(--color-btn);
+    border: 2px solid var(--color-btn)
+}
+
+#btn-left{
+    transform: translateY(-450%);
+    left: 1.5%;
+}
+
+#btn-right{
+    transform: translateY(-550%);
+    left: 94%;
+}
+
+
+
+
 
 /*PARTE DE EMILIA */
 #Contacto{
