@@ -316,7 +316,7 @@
 }
 
 /*---------------------------------------------Servicios---------------------------------------------*/
-/*
+/*---------------------------------------------Servicios---------------------------------------------*/
 :root{
     --color-fondo: #F3F3F3;
     --color-borde: #d90062bf;
@@ -332,35 +332,28 @@
 body{
     color: var(--color-titulo-srv);
 }
- KEVIN: comenté lo de arriba porque me rompía mi parte del footer del contacto, porque pusiste body y * y eso abarca todo. La prox nos fijamos si queres como cambiarlo */
-
 /*CONFIGURACION HEADER POR BTN*/
-.header-titulo {
+.header-titulo{
     display: flex;
     justify-content: flex-start;
 }
-
 /*DOM DE SERVICIOS*/
-
-
-.dom-servicios {
+.dom-servicios{
     position: static;
     background-color: var(--color-fondo);
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     margin: 0 auto;
 }
-
 /*MARCO QUE OFRECEMOS*/
-.marco-servicios {
+.marco-servicios{
     margin-bottom: 1em;
     border-bottom: 3px solid var(--color-borde);
     border-top: 3px solid var(--color-borde);
     width: 21%;
 }
-
 /*BLOQUES SRV INDIVIDUAL*/
-.servicio-unico {
+.servicio-unico{
     width: 400px;
     height: auto;
     margin: 5px;
@@ -368,6 +361,7 @@ body{
 
     border: 3px solid var(--color-azul-srv);
     border-radius: 30px;
+
     cursor: default;
     transition: all 400ms ease;
 }
@@ -377,8 +371,7 @@ body{
 .logos-servicios-base:hover{
     color: #F3F3F3;
 }
-
-.servicio-unico:hover {
+.servicio-unico:hover{
     color: #F3F3F3;
     background-color: var(--color-azul-srv);
     transform: translateY(-2%);
@@ -387,19 +380,17 @@ body{
 
 /*-------------------------FLEX----------------------*/
 /*FLEX DE SERVICIOS*/
-.flex-srv {
+.flex-srv{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 /*FLEX DE TITULO QUE OFRECEMOS*/
-.flex-titulo {
+.flex-titulo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 /*---------------------TIPOGRAFIA-------------------*/
 /*TITULO QUE OFRECEMOS*/
 .titulo-principal {
@@ -408,59 +399,48 @@ body{
     font-size: 2.5vw;
     padding-top: 2%;
     padding-bottom: 2%;
-
 }
-
 /*TITULO DE SERVICIOS INDIVIDUALES*/
 .titulo-ind-srv {
     text-align: center;
     font-family: 'Raleway';
     font-style: normal;
-
     padding-bottom: 5%;
     padding-top: 5%;
 }
-
 /*TEXTO DE SERVICOS INDIVIDUALES*/
 .texto-srv {
     display: block;
     font-family: 'Raleway';
     font-style: normal;
-
     margin-left: 10%;
     margin-right: 10%;
 }
-
 /*---------------------ICONOS-------------------*/
-.logos-servicios-base {
+.logos-servicios-base{
     max-width: 5vw;
     margin-top: 1.5em;
 }
-
-.logos-servicios-2 {
+.logos-servicios-2{
     max-width: 4.5vw;
     margin-top: 1.5em;
 }
-
-.logos-servicios-3 {
+.logos-servicios-3{
     max-width: 4vw;
     margin-top: 1.5em;
 }
-
-.logos-servicios-5 {
+.logos-servicios-5{
     max-width: 5vw;
     padding-bottom: 6px;
     margin-top: 1.5em;
 }
-
-.logos-servicios-6 {
+.logos-servicios-6{
     max-width: 4.8vw;
     padding-bottom: 2px;
     margin-top: 1.5em;
 }
-
 /*---------------------MENU LECTOR DE PANTALLA-------------------*/
-.sr-only {
+.sr-only{
     position: absolute;
     top: 0;
     left: -4000;
@@ -469,32 +449,29 @@ body{
     height: 1px;
     overflow: hidden;
 }
-
 /*ELIMINACION DE BOTON MOBIL*/
-.btn-mobil {
+.btn-mobil{
     display: none;
 }
-
 /*---------------------------SUB MENU---------------------*/
 /*SUBMENI INVISIBLE*/
-.submenu {
-    position: absolute;
+    .submenu{
+        position: absolute;
 
-}
+    }
+    
+    .link-submenu{
+        display: block;
+        padding: 1vw 4.5vw 1vw 4.5vw;
+        color: var(--color-fondo);
+        font-size: 1.3vh;
 
-.link-submenu {
-    display: block;
-    padding: 1vw 4.5vw 1vw 4.5vw;
-    color: var(--color-fondo);
-    font-size: 1.3vh;
-
-}
-
-.link-submenu {
-    padding-right: 5em;
-    padding-left: 3em;
-}
-
+    }
+    .link-submenu{
+        padding-right: 5em;
+        padding-left: 3em;
+    }
+    
 /*---------------------VISTA grande-------------------*/
 @media screen and (min-width:900px) {
     .flex-srv {
@@ -502,43 +479,33 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
     }
-
-    .servicio-unico {
+    .servicio-unico{
         padding: 0%;
     }
 
-    .header{
-        position: fixed;
-        z-index: 5;
-    }
 }
-
 /*---------------------VISTA MOBIL-------------------*/
-@media screen and (max-width: 870px) {
-    .header {
+@media screen and (max-width: 870px){
+    .header{
         z-index: 100;
         position: fixed;
         flex-direction: row;
         gap: 0;
     }
-
-    /*TITULO HEADER*/
-    .header-titulo {
-        z-index: 101;
-    }
-
-    /*TITULO PRINCIPAL DE SERVICIO*/
-    .titulo-principal {
+/*TITULO HEADER*/
+    .header-titulo{
+    z-index: 101;
+}
+/*TITULO PRINCIPAL DE SERVICIO*/
+    .titulo-principal{
         font-size: 4.2vw;
-    }
-
-    .marco-servicios {
+}
+    .marco-servicios{
         width: 35%;
     }
-
-    /*--------------------NAV CONFIGURACION--------------*/
-    /*LISTA MOBIL POR DEFAULT*/
-    .nav__lista {
+/*--------------------NAV CONFIGURACION--------------*/
+/*LISTA MOBIL POR DEFAULT*/
+    .nav__lista{
         position: fixed;
         z-index: 100;
         top: 0;
@@ -555,13 +522,11 @@ body{
         transform: translateY(-100%);
         padding: 0px;
     }
-
-    .item-link {
+    .item-link{
         font-size: 3vh;
     }
-
-    /*CONFIGURACION DEL BOTON*/
-    .btn-mobil {
+/*CONFIGURACION DEL BOTON*/
+    .btn-mobil{
         display: block;
         position: absolute;
         padding-top: 1.1vw;
@@ -576,27 +541,23 @@ body{
         background-image: url('../img/MenuMobileSVG.svg');
         background-repeat: no-repeat;
     }
-
-    /*-------------------FUNCIONES DEL BOTON------------------*/
-    /*SENTENCIA LISTA*/
-    .nav__lista[data-visible="true"] {
+/*-------------------FUNCIONES DEL BOTON------------------*/
+/*SENTENCIA LISTA*/
+   .nav__lista[data-visible="true"]{
         transform: translateX(0);
         transition: transform 300ms ease;
     }
-
-    /*SENTENCIA DEL BOTON*/
-    .btn-mobil[aria-expanded="true"] {
+/*SENTENCIA DEL BOTON*/
+    .btn-mobil[aria-expanded="true"]{
         background-image: url('../img/MenuMobile2SVG.svg');
     }
 }
-
 /*------------------------SUBMENU----------------------*/
 /*MENU DESPLEGABLE*/
-.container-submenu {
+    .container-submenu{
     position: relative;
-}
-
-.submenu {
+    }
+    .submenu{
     width: 100%;
     padding: 0;
     height: 0;
@@ -604,31 +565,24 @@ body{
     z-index: 103;
     opacity: 0;
     visibility: hidden;
-}
-
-.container-submenu:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
-.link-submenu:hover {
-    background-color: #666666;
-}
-
-.item-submenu {
-    display: block;
-    color: var(--color-fondo);
-    text-decoration: none;
-    background-color: var(--color-borde);
-}
-
-.lista-item {
-    margin: 0;
-}
-
-.nav__lista {
-    margin-top: 16px;
-}
+    }
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+    .link-submenu:hover{
+        background-color: #666666;
+    }
+    .item-submenu{
+        display: block;
+        color: var(--color-fondo);
+        text-decoration: none;
+        background-color: var(--color-borde);
+    }
+    .lista-item{
+        width: 100%;
+        margin: 0;
+    }
 /* parte de galo, no entendimos nada */
 .testimonios {
     background-image: url(../img/Testimonios/testimonios.jpg);
