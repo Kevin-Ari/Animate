@@ -737,16 +737,14 @@ article>h3 {
 }
 
 .opinion__contenedor{
-    width: 90%;
-    max-width: 900px;
+    width: 60%;
+    height: 70%;
     overflow: hidden;
     box-shadow: 10px 15px 25px 10px rgba(57, 57, 60, 0.2);
     border-radius: 16px;
 }
 
 .opinion__caja{
-    height: 400px;
-    min-height: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -756,14 +754,12 @@ article>h3 {
 }
 
 .opinion__caja__seccion{
-    min-height: 100%;
+    min-height: 55vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2rem;
-    margin-top: 4rem;
 }
 
 .__seccion__img{
@@ -778,11 +774,12 @@ article>h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
+    gap: 1rem;
 }
 
 .__seccion__texto{
-    max-height: 190px;
+    max-height: 10%;
+    max-width: 80%;
     padding: .5rem;
     margin: 0;
     font: var(--font-texto);
@@ -831,9 +828,8 @@ article>h3 {
 .botonera {
     display: flex;
 }
-
-.__caja__btn{
-    position: relative;
+/* FALTA ARREGLAR BOTONES ESTAN COMENTADO ESTO LOS BTN RIGHT Y LEFT Y EL TEXTO EN EL HTML */
+/* .__caja__btn{
     width: 40px;
     height: 40px;
     border: 2px solid var(--color-sec);
@@ -845,9 +841,9 @@ article>h3 {
     font-family: monospace;
     font-weight: bold;
     cursor: pointer;
+    position: absolute;
     
-    
-}
+} */
 
 .__caja__btn:hover{
     background-color: var(--color-sec);
@@ -856,13 +852,11 @@ article>h3 {
 }
 
 #btn-left{
-    transform: translateY(-450%);
-    left: 1.5%;
+    z-index: -10;
 }
 
 #btn-right{
-    transform: translateY(-550%);
-    left: 94%;
+    z-index: -10;
 }
 
 
