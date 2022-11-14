@@ -334,7 +334,7 @@ body{
 /*BLOQUES SRV INDIVIDUAL*/
 .servicio-unico{
     width: 400px;
-    height: 240px;
+    height: auto;
     margin: 5px;
     padding-bottom: 30px;
 

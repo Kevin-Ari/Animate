@@ -22,7 +22,7 @@ botonNav.addEventListener('click', () => {
 })
 //SUBMENU DESPLEGABLE
 
-const subMenuBtn = document.querySelectorAll('.submenu-btn');
+/*const subMenuBtn = document.querySelectorAll('.submenu-btn');
 console.log(window.innerWidth)
 for (let i=0; i < subMenuBtn.length; i++) {
     subMenuBtn[i].addEventListener('click', function() {
@@ -41,9 +41,10 @@ for (let i=0; i < subMenuBtn.length; i++) {
         }
     });
 }
+*/
 /* Definir los clases style y desplegar */
 //Cambio de imagenes
-var imgHover = "programacion-web-hover.png";
+//var imgHover = "../img/logos-servicios/programacion-web-hover.png";
 
 
 
