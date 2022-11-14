@@ -12,12 +12,21 @@
     --color-: #222222;
     --color-footer: #501464;
     --color-: #333333;
-    --color-: #FFFFFF;
+    --color-blanco: #FFFFFF;
     --color-: #000000;
 
-    --fonts-titulo : 700 2.5vw 'raleway',sans-serif; 
+    --fonts-titulo : 700 2.5vw 'raleway',sans-serif;
+    --font-nombres : 600 1.5vw 'raleway',sans-serif;
+    --font-puesto : 400 1vw 'raleway' ,sans-serif;
+    --font-texto: 600 1vw 'raleway', sans-serif;
+
+    --fondo-Testimonios : url(../img/Testimonios/testimonios.jpg)
 }
 
+.strong-marca {
+    color: var(--color-btn);
+    font-weight: 700;
+}
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -92,7 +101,7 @@
 .home-titulo {
     margin: 0;
     padding: 0;
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: clamp(44px, 1.5vw, 64px);
@@ -101,7 +110,7 @@
 
 .home-btn {
     background-color: var(--color-btn);
-    color: var(--color-blanco2);
+    color: var(--color-blanco);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: clamp(24px, 1.5vw, 48px);
@@ -132,7 +141,7 @@
 }
 
 .boton-home {
-    color: white;
+    color: var(--color-blanco);
     border: none;
     border-radius: 10px;
     background-color: var(--color-btn);
@@ -192,7 +201,7 @@
     position: relative;
     width: 300px;
     height: 450px;
-    background: #FFFFFF;
+    background: var(--color-blanco);
     border-radius: 25px;
     overflow: hidden;
     transition: .5s;
@@ -206,16 +215,20 @@
     box-shadow: 0 5px 15px rgba (3, 89, 92, .5);
     transform: translateY(-15px);
     background: var(--color-sec);
-    color: #ffffff;
+    color: var(--color-blanco);
 }
 
-.card .head {
+.card:hover h3 {
+    color: var(--color-blanco);
+}
+
+.card-ind {
     height: 125px;
     width: 100%;
     position: relative;
 }
 
-.card .head .circulo {
+.circulo {
     position: absolute;
     width: 300px;
     height: 300px;
@@ -225,10 +238,10 @@
     transform: translate(-0.5%);
 }
 
-.card .head .img {
+.card-ind .img-cv {
     width: 150px;
     position: absolute;
-    background: #ffffff;
+    background: var(--color-blanco);
     padding: 5px;
     border-radius: 50%;
     bottom: -30%;
@@ -236,11 +249,17 @@
     transform: translate(-50%);
 }
 
-.card .head .img img {
+.card .card-ind .img-cv img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.card .card-ind {
+    height: 125px;
+    width: 100%;
+    position: relative;
 }
 
 .card .presentacion {
@@ -250,7 +269,7 @@
     border-bottom: solid 1px rgba(6. 74. 76, .18);
     text-align: center;
 }
-
+/*
 .card .presentacion h3 {
     color: var(--color-sec);
 }
@@ -258,7 +277,7 @@
 .card .presentacion h3:hover {
     color: #FFFFFF;
 
-}
+} */
 
 /*no se como poner el nombre en blanco, es el h3*/
 
@@ -283,7 +302,7 @@
 
 .card .contacto a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-blanco);
     background: var(--color-sec);
     padding: 5px 20px;
     border-radius: 5px;
@@ -292,10 +311,12 @@
 }
 
 .card .contacto a:hover {
-    background: white;
+    background: var(--color-blanco);
     color: var(--color-sec);
 }
+
 /*---------------------------------------------Servicios---------------------------------------------*/
+/*
 :root{
     --color-fondo: #F3F3F3;
     --color-borde: #d90062bf;
@@ -311,28 +332,35 @@
 body{
     color: var(--color-titulo-srv);
 }
+ KEVIN: comenté lo de arriba porque me rompía mi parte del footer del contacto, porque pusiste body y * y eso abarca todo. La prox nos fijamos si queres como cambiarlo */
+
 /*CONFIGURACION HEADER POR BTN*/
-.header-titulo{
+.header-titulo {
     display: flex;
     justify-content: flex-start;
 }
+
 /*DOM DE SERVICIOS*/
-.dom-servicios{
+
+
+.dom-servicios {
     position: static;
     background-color: var(--color-fondo);
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
     margin: 0 auto;
 }
+
 /*MARCO QUE OFRECEMOS*/
-.marco-servicios{
+.marco-servicios {
     margin-bottom: 1em;
     border-bottom: 3px solid var(--color-borde);
     border-top: 3px solid var(--color-borde);
     width: 21%;
 }
+
 /*BLOQUES SRV INDIVIDUAL*/
-.servicio-unico{
+.servicio-unico {
     width: 400px;
     height: auto;
     margin: 5px;
@@ -340,7 +368,6 @@ body{
 
     border: 3px solid var(--color-azul-srv);
     border-radius: 30px;
-
     cursor: default;
     transition: all 400ms ease;
 }
@@ -350,7 +377,8 @@ body{
 .logos-servicios-base:hover{
     color: #F3F3F3;
 }
-.servicio-unico:hover{
+
+.servicio-unico:hover {
     color: #F3F3F3;
     background-color: var(--color-azul-srv);
     transform: translateY(-2%);
@@ -359,17 +387,19 @@ body{
 
 /*-------------------------FLEX----------------------*/
 /*FLEX DE SERVICIOS*/
-.flex-srv{
+.flex-srv {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 /*FLEX DE TITULO QUE OFRECEMOS*/
-.flex-titulo{
+.flex-titulo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 /*---------------------TIPOGRAFIA-------------------*/
 /*TITULO QUE OFRECEMOS*/
 .titulo-principal {
@@ -378,48 +408,59 @@ body{
     font-size: 2.5vw;
     padding-top: 2%;
     padding-bottom: 2%;
+
 }
+
 /*TITULO DE SERVICIOS INDIVIDUALES*/
 .titulo-ind-srv {
     text-align: center;
     font-family: 'Raleway';
     font-style: normal;
+
     padding-bottom: 5%;
     padding-top: 5%;
 }
+
 /*TEXTO DE SERVICOS INDIVIDUALES*/
 .texto-srv {
     display: block;
     font-family: 'Raleway';
     font-style: normal;
+
     margin-left: 10%;
     margin-right: 10%;
 }
+
 /*---------------------ICONOS-------------------*/
-.logos-servicios-base{
+.logos-servicios-base {
     max-width: 5vw;
     margin-top: 1.5em;
 }
-.logos-servicios-2{
+
+.logos-servicios-2 {
     max-width: 4.5vw;
     margin-top: 1.5em;
 }
-.logos-servicios-3{
+
+.logos-servicios-3 {
     max-width: 4vw;
     margin-top: 1.5em;
 }
-.logos-servicios-5{
+
+.logos-servicios-5 {
     max-width: 5vw;
     padding-bottom: 6px;
     margin-top: 1.5em;
 }
-.logos-servicios-6{
+
+.logos-servicios-6 {
     max-width: 4.8vw;
     padding-bottom: 2px;
     margin-top: 1.5em;
 }
+
 /*---------------------MENU LECTOR DE PANTALLA-------------------*/
-.sr-only{
+.sr-only {
     position: absolute;
     top: 0;
     left: -4000;
@@ -428,29 +469,32 @@ body{
     height: 1px;
     overflow: hidden;
 }
+
 /*ELIMINACION DE BOTON MOBIL*/
-.btn-mobil{
+.btn-mobil {
     display: none;
 }
+
 /*---------------------------SUB MENU---------------------*/
 /*SUBMENI INVISIBLE*/
-    .submenu{
-        position: absolute;
+.submenu {
+    position: absolute;
 
-    }
-    
-    .link-submenu{
-        display: block;
-        padding: 1vw 4.5vw 1vw 4.5vw;
-        color: var(--color-fondo);
-        font-size: 1.3vh;
+}
 
-    }
-    .link-submenu{
-        padding-right: 5em;
-        padding-left: 3em;
-    }
-    
+.link-submenu {
+    display: block;
+    padding: 1vw 4.5vw 1vw 4.5vw;
+    color: var(--color-fondo);
+    font-size: 1.3vh;
+
+}
+
+.link-submenu {
+    padding-right: 5em;
+    padding-left: 3em;
+}
+
 /*---------------------VISTA grande-------------------*/
 @media screen and (min-width:900px) {
     .flex-srv {
@@ -458,33 +502,43 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
     }
-    .servicio-unico{
+
+    .servicio-unico {
         padding: 0%;
     }
 
-}
-/*---------------------VISTA MOBIL-------------------*/
-@media screen and (max-width: 870px){
     .header{
+        position: fixed;
+        z-index: 5;
+    }
+}
+
+/*---------------------VISTA MOBIL-------------------*/
+@media screen and (max-width: 870px) {
+    .header {
         z-index: 100;
         position: fixed;
         flex-direction: row;
         gap: 0;
     }
-/*TITULO HEADER*/
-    .header-titulo{
-    z-index: 101;
-}
-/*TITULO PRINCIPAL DE SERVICIO*/
-    .titulo-principal{
+
+    /*TITULO HEADER*/
+    .header-titulo {
+        z-index: 101;
+    }
+
+    /*TITULO PRINCIPAL DE SERVICIO*/
+    .titulo-principal {
         font-size: 4.2vw;
-}
-    .marco-servicios{
+    }
+
+    .marco-servicios {
         width: 35%;
     }
-/*--------------------NAV CONFIGURACION--------------*/
-/*LISTA MOBIL POR DEFAULT*/
-    .nav__lista{
+
+    /*--------------------NAV CONFIGURACION--------------*/
+    /*LISTA MOBIL POR DEFAULT*/
+    .nav__lista {
         position: fixed;
         z-index: 100;
         top: 0;
@@ -501,11 +555,13 @@ body{
         transform: translateY(-100%);
         padding: 0px;
     }
-    .item-link{
+
+    .item-link {
         font-size: 3vh;
     }
-/*CONFIGURACION DEL BOTON*/
-    .btn-mobil{
+
+    /*CONFIGURACION DEL BOTON*/
+    .btn-mobil {
         display: block;
         position: absolute;
         padding-top: 1.1vw;
@@ -520,23 +576,27 @@ body{
         background-image: url('../img/MenuMobileSVG.svg');
         background-repeat: no-repeat;
     }
-/*-------------------FUNCIONES DEL BOTON------------------*/
-/*SENTENCIA LISTA*/
-   .nav__lista[data-visible="true"]{
+
+    /*-------------------FUNCIONES DEL BOTON------------------*/
+    /*SENTENCIA LISTA*/
+    .nav__lista[data-visible="true"] {
         transform: translateX(0);
         transition: transform 300ms ease;
     }
-/*SENTENCIA DEL BOTON*/
-    .btn-mobil[aria-expanded="true"]{
+
+    /*SENTENCIA DEL BOTON*/
+    .btn-mobil[aria-expanded="true"] {
         background-image: url('../img/MenuMobile2SVG.svg');
     }
 }
+
 /*------------------------SUBMENU----------------------*/
 /*MENU DESPLEGABLE*/
-    .container-submenu{
+.container-submenu {
     position: relative;
-    }
-    .submenu{
+}
+
+.submenu {
     width: 100%;
     padding: 0;
     height: 0;
@@ -544,24 +604,31 @@ body{
     z-index: 103;
     opacity: 0;
     visibility: hidden;
-    }
-    .container-submenu:hover .submenu {
-        opacity: 1;
-        visibility: visible;
-    }
-    .link-submenu:hover{
-        background-color: #666666;
-    }
-    .item-submenu{
-        display: block;
-        color: var(--color-fondo);
-        text-decoration: none;
-        background-color: var(--color-borde);
-    }
-    .lista-item{
-        width: 100%;
-        margin: 0;
-    }
+}
+
+.container-submenu:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link-submenu:hover {
+    background-color: #666666;
+}
+
+.item-submenu {
+    display: block;
+    color: var(--color-fondo);
+    text-decoration: none;
+    background-color: var(--color-borde);
+}
+
+.lista-item {
+    margin: 0;
+}
+
+.nav__lista {
+    margin-top: 16px;
+}
 /* parte de galo, no entendimos nada */
 .testimonios {
     background-image: url(../img/Testimonios/testimonios.jpg);
@@ -592,25 +659,10 @@ body{
     align-items: center;
 }
 
-.titulo-oportunidades {
-    text-align: center;
-    width: 30vw;
-    color: var(--color-sec);
-    border-top: 3px solid var(--color-btn);
-    border-bottom: 3px solid var(--color-btn);
-    line-height: 2;
-    margin: 3vw;
-}
-
 .intro-oportunidades {
     text-align: center;
     margin: 2vw;
     font-size: 20px;
-}
-
-.strong-marca {
-    color: var(--color-btn);
-    font-weight: 700;
 }
 
 .ofertas {
@@ -621,11 +673,27 @@ body{
     color: var(--color-sec);
     border-width: 3px;
     border-style: solid;
-    border-color: var(--color-btn);
+    border-color: var(--color-sec);
     margin: 10px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 25px;
     width: 50vw;
+}
+
+.ofertas:hover {
+    background-color: var(--color-sec);
+    color: var(--color-blanco2);
+}
+.ofertas:hover h2 {
+    background-color: var(--color-sec);
+    color: var(--color-blanco2);
+}
+
+.img-org img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 article>h2 {
@@ -642,7 +710,7 @@ article>h3 {
 .boton {
     text-decoration: none;
     color: white;
-    font-family: 'Raleway', sans-serif;
+
     font-size: 14px;
     background-color: var(--color-btn);
     padding: 5px;
@@ -657,6 +725,143 @@ article>h3 {
 }
 
 /* hasta aca la parte de oportunidades Ana*/
+
+/* TESTIMONIOS */
+
+#Opiniones{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opinion__contenedor{
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+    box-shadow: 10px 15px 25px 10px rgba(57, 57, 60, 0.2);
+    border-radius: 16px;
+}
+
+.opinion__caja{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -100%;
+
+}
+
+.opinion__caja__seccion{
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.__seccion__img{
+    width: 15%;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.__seccion__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.__seccion__texto{
+    max-height: 10%;
+    max-width: 80%;
+    padding: .5rem;
+    margin: 0;
+    font: var(--font-texto);
+    overflow: scroll;
+    text-align: center;
+}
+
+.__seccion__texto::-webkit-scrollbar {
+    width: 5px;
+    /* Tamaño del scroll en vertical */
+    height: 0px;
+    /* Tamaño del scroll en horizontal */
+    /* Ocultar scroll */
+}
+
+.__seccion__texto::-webkit-scrollbar-thumb {
+    background: var(--color-btn);
+    border-radius: 4px;
+}
+
+.__seccion__nombre{
+    font: var(--font-nombres);
+    color: var(--color-btn);
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.__seccion__puesto{
+    padding: 0;
+    margin: 0;
+    font: var(--font-puesto);
+    color: var(--color-hoover);
+}
+
+.__seccion__btn{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-btn);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--color-blanco2);
+    font: var(--font-puesto);
+}
+
+.botonera {
+    display: flex;
+}
+/* FALTA ARREGLAR BOTONES ESTAN COMENTADO ESTO LOS BTN RIGHT Y LEFT Y EL TEXTO EN EL HTML */
+/* .__caja__btn{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-sec);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    
+} */
+
+.__caja__btn:hover{
+    background-color: var(--color-sec);
+    color: var(--color-btn);
+    border: 2px solid var(--color-btn)
+}
+
+#btn-left{
+    z-index: -10;
+}
+
+#btn-right{
+    z-index: -10;
+}
+
+
+
+
 
 /*PARTE DE EMILIA */
 #Contacto{
@@ -807,7 +1012,7 @@ article>h3 {
 .contenedor-footer-1 {
     width: 25vw;
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 250px;
 }
 
 .footer-logo-animate {
@@ -833,19 +1038,21 @@ article>h3 {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-left: 100px;
 }
 
 .contenedor-2-titulo {
     font-size: 30px;
-    margin-bottom: 7px;
+    margin-bottom: 30px;
 }
 
 .lista-footer-2 {
-    margin-top: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .contenedor-footer-3 {
+    font-size: 30px;
     width: 25vw;
 }
 
@@ -855,27 +1062,36 @@ article>h3 {
 }
 
 .img-factura-c {
-    max-width: 350px;
-    max-height: 400px;
-    margin-left: 30px;
+    max-width: 200px;
+    max-height: 350px;
+    margin-left: 50px;
 }
-
-/* ME FALTA TERMINAR ACÁ */
-.contenedor-copyright {}
 
 .footer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     height: 50vh;
     width: 100%;
     background-color: var(--color-footer);
-    gap: 350px;
+    gap: 10px;
     overflow: hidden;
 }
 
+.contenedor-copyright {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--color-btn);
+}
+
 .footer-texto {
-    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 0px;
+    font-weight: 500;
 }
 
 
