@@ -22,8 +22,8 @@
                 <li class="lista-item"><a class="item-link" href="#home">Home</a></li>
                 <li class="lista-item"><a class="item-link" href="#about">Sobre nosotros</a></li>
                 <li class="lista-item"><a class="item-link" href="#Servicios">Servicios</a></li>
-                <!-- <li class="lista-item"><a class="item-link" href="#blog">Blog</a></li>
-                <li class="lista-item"><a class="item-link" href="#testimonios">Testimonios</a></li> -->
+                <li class="lista-item"><a class="item-link" href="blog.html">Blog</a></li>
+                <!--<li class="lista-item"><a class="item-link" href="#testimonios">Testimonios</a></li> -->
                 <li class="lista-item"><a class="item-link" href="#Oportunidades">Oportunidades</a></li>
                 <li class="lista-item"><a class="item-link" href="#Contacto">Contacto</a></li>
             </ul>
@@ -337,44 +337,46 @@
     <!-- ACÁ EMPIEZA CONTACTO -->
     <section id="Contacto">
         <p class="titulos">¿Interesado?</p>
-        <div class="contacto-contenedor">
-            <div class="contenedor-texto">
-                <div class="contenedor-titulo">
-                    <p>
-                        Completá tus datos y nos contactaremos a la brevedad
-                    </p>
-                </div>
-                <div class="label-nombre">
-                    <label for="nombre">
-                        <input class="input-nombre" type="text" name="nombre" id="nombre"
-                            placeholder="Ingrese su nombre completo *" required>
+        <form action="correos.php" method="post">
+            <div class="contacto-contenedor">
+                <div class="contenedor-texto">
+                    <div class="contenedor-titulo">
+                        <p>
+                            Completá tus datos y nos contactaremos a la brevedad
+                        </p>
+                    </div>
+                    <div class="label-nombre">
+                        <label for="nombre">
+                            <input class="input-nombre" type="text" name="nombre" id="nombre"
+                                placeholder="Ingrese su nombre completo *" required>
+                        </label>
+                    </div>
+                    <div class="labels-medio">
+                        <label for="email">
+                            <input class="input-medio" type="email" name="email" id="email"
+                                placeholder="Ingrese su correo *" required>
+                        </label>
+                        <label for="telefono">
+                            <input class="input-medio" type="tel" name="telefono" id="telefono"
+                                placeholder="Ingrese su telefono *" required>
+                        </label>
+                    </div>
+                    <div class="dropdown-motivo">
+                        <label for="motivo">
+                            <select class="dropdown" name="motivo" required>
+                                <option value="" selected>Seleccione el motivo</option>
+                                <option value="">Quiero potenciar mi página</option>
+                                <option value="">Quiero digitalizar mi emprendimiento</option>
+                                <option value="">Otros</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label for="texto">
+                        <textarea name = "texto" class="label-texto" id="texto" placeholder="Escriba su consulta *" required></textarea>
                     </label>
+                    <button class="boton-enviar">ENVIAR MENSAJE</button>
                 </div>
-                <div class="labels-medio">
-                    <label for="email">
-                        <input class="input-medio" type="email" name="email" id="email"
-                            placeholder="Ingrese su correo *" required>
-                    </label>
-                    <label for="telefono">
-                        <input class="input-medio" type="tel" name="telefono" id="telefono"
-                            placeholder="Ingrese su telefono *" required>
-                    </label>
-                </div>
-                <div class="dropdown-motivo">
-                    <label for="motivo">
-                        <select class="dropdown" name="motivo" required>
-                            <option value="" selected>Seleccione el motivo</option>
-                            <option value="">Quiero potenciar mi página</option>
-                            <option value="">Quiero digitalizar mi emprendimiento</option>
-                            <option value="">Otros</option>
-                        </select>
-                    </label>
-                </div>
-                <label for="texto">
-                    <textarea class="label-texto" id="texto" placeholder="Escriba su consulta *" required></textarea>
-                </label>
-                <button class="boton-enviar">ENVIAR MENSAJE</button>
-            </div>
+        </form>    
             <div class="contenedor-tel-mapa">
                 <a class="contacto-seccion">
                     <div class="mini-contenedor">
