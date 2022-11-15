@@ -269,17 +269,7 @@
     border-bottom: solid 1px rgba(6. 74. 76, .18);
     text-align: center;
 }
-/*
-.card .presentacion h3 {
-    color: var(--color-sec);
-}
 
-.card .presentacion h3:hover {
-    color: #FFFFFF;
-
-} */
-
-/*no se como poner el nombre en blanco, es el h3*/
 
 .card .presentacion h4 {
     padding-top: 8px;
@@ -613,25 +603,25 @@ body{
     align-items: center;
 }
 
-.intro-oportunidades {
+.intro__oportunidades {
     text-align: center;
     margin: 2vw;
     font-size: 20px;
 }
 
+/* Cada article con su hover*/
 .ofertas {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    /*justify-content: space-between;*/
+    align-items: center;
     color: var(--color-sec);
-    border-width: 3px;
     border-style: solid;
     border-color: var(--color-sec);
-    margin: 10px;
+    margin: 50px;
     padding: 30px;
     border-radius: 25px;
-    width: 50vw;
+    width: 30vw;
 }
 
 .ofertas:hover {
@@ -643,37 +633,37 @@ body{
     color: var(--color-blanco2);
 }
 
-.img-org img {
-    width: 100%;
-    height: 100%;
+/* Cada article con su hover*/
+.img__oportunidades img {
+    position: relative;
+    width: 15vw;
     border-radius: 50%;
-    object-fit: cover;
+    top: -100px;
 }
 
 article>h2 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--color-sec);
 }
 
 article>h3 {
     font-size: 12px;
-    margin-bottom: 12px;
+    font-weight: 400;
 }
 
-.boton {
+.boton__oportunidades {
     text-decoration: none;
     color: white;
-
     font-size: 14px;
     background-color: var(--color-btn);
-    padding: 5px;
+    padding: 8px;
     font-weight: 600;
     border-radius: 5px;
-    transition: 500ms;
+    transition: 0.3s;
 }
 
-.boton:hover {
+.boton__oportunidades:hover {
     color: var(--color-btn);
     background-color: white;
 }
