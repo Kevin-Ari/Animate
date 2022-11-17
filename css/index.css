@@ -10,7 +10,7 @@
     --color-fondo-nav: rgba(20, 25, 45, 1);
     --color-sec: #172D42;
     --color-: #222222;
-    --color-footer: #501464;
+    --color-footer: #EFEBEB;
     --color-: #333333;
     --color-blanco: #FFFFFF;
     --color-: #000000;
@@ -314,6 +314,7 @@
     --color-titulo-srv: #333333;
     --color-azul-srv: #172D42;
 }
+/*
 *{
     margin: 0;
     text-align: center;
@@ -322,6 +323,7 @@
 body{
     color: var(--color-titulo-srv);
 }
+*/
 /*CONFIGURACION HEADER POR BTN*/
 .header-titulo{
     display: flex;
@@ -1016,7 +1018,7 @@ body{
     margin-top: 50px;
     height: 50vh;
     width: 100%;
-    background-color: var(--color-footer);
+    background-color: var(--color-footer2);
     gap: 10px;
     overflow: hidden;
 }
