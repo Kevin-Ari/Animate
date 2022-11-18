@@ -839,6 +839,14 @@ body{
     border-radius: 15px;
     margin-bottom: 55px;
     width: 12.5vw;
+    transition: .5s;
+}
+
+.mini-contenedor:hover {
+    box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+    transform: translateY(-2px);
+    background: var(--color-sec);
+    color: var(--color-blanco);
 }
 
 .map {
@@ -851,6 +859,10 @@ body{
 .titulo-seccion {
     font-weight: 800;
     color: var(--color-sec);
+}
+
+.mini-contenedor:hover .titulo-seccion {
+    color: var(--color-blanco);
 }
 
 .contacto-iconos {
@@ -1038,17 +1050,28 @@ body{
 }
 
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1000px) {
     .contacto-contenedor {
         flex-direction: column;
     }
 
-    .contenedor-texto input {
-        width: 50vw;
+    .contenedor-texto{
+        max-width: 100vw;
+        max-height: 90vh;
+        padding:10px;
     }
 
-    .labels-top {
+    .contenedor-texto label {
         flex-direction: column;
+    }
+
+    .input-nombre, .input-medio, .dropdown, .label-texto, .contenedor-titulo{
+        width: 45vw;
+    }
+
+    .labels-medio {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .contacto-seccion {
@@ -1058,11 +1081,10 @@ body{
 
     .boton-enviar {
         width: 20vw;
+        margin: 20px 0px 20px 0px;
     }
 
-    .contacto-main {
-        height: 125vh;
-    }
+    
 }
 
 @media screen and (min-width: 1080px) {
