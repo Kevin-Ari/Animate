@@ -1050,7 +1050,7 @@ body{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .contacto-contenedor {
         flex-direction: column;
     }
@@ -1074,17 +1074,43 @@ body{
         gap: 20px;
     }
 
-    .contacto-seccion {
-        width: 55vw;
-        margin: 10px;
-    }
-
     .boton-enviar {
         width: 20vw;
         margin: 20px 0px 20px 0px;
     }
 
+    .contacto-seccion {
+        width: 55vw;
+        margin: 10px;
+    }
+
+    .mini-contenedor {
+        width: 55vw;
+    }
+
+    .map {
+        display: none;
+    }
     
+    .footer{
+        flex-direction: column;
+    }
+
+    .contenedor-footer-2, .contenedor-footer-3 {
+        display: none;
+    }
+
+    .contenedor-footer-1 {
+        width: 50vw;
+        margin: 0 auto;
+    }
+    
+    .lista-footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width: 1080px) {
