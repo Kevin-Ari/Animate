@@ -21,6 +21,9 @@
     --font-texto: 600 clamp(.9rem, 1vw, 1.8rem) 'raleway', sans-serif;
     --font-btn: 600 clamp(.8rem, 1.5vw, 1.8rem) 'raleway', sans-serif;
 
+    /* MOBILE */
+    --font-titulo-M: 700 clamp(1.5rem, 2.5vw, 2rem) 'raleway', sans-serif;
+
     --fondo-Testimonios: url(../img/Testimonios/testimonios.jpg)
 }
 
@@ -183,7 +186,9 @@
     border-radius: 12px;
     background-color: var(--color-sec);
 }
-
+.img-A{
+    display: none;
+}
 /* CARDS */
 
 .elTeam {
