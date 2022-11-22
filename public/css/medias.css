@@ -1,6 +1,6 @@
 /*---------------------VISTA grande-------------------*/
 
-@media screen and (min-width:1500px) {
+@media screen and (max-width:1500px) {
     .contacto-contenedor {
         flex-direction: column;
     }
@@ -193,11 +193,8 @@
     }
 }
 
-@media screen and (max-width: 830px) {
-    .contacto-contenedor {
-        flex-direction: column;
-    }
-
+/*
+@media screen and (min-width: 1500px) {
     .contenedor-texto input {
         width: 50vw;
     }
@@ -218,7 +215,7 @@
     .contacto-main {
         height: 125vh;
     }
-}
+}  */
 
 @media (max-width: 600px) {
 

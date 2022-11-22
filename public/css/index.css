@@ -429,6 +429,7 @@
     --color-azul-srv: #172D42;
 }
 
+/*
 * {
     margin: 0;
     text-align: center;
@@ -437,7 +438,7 @@
 
 body {
     color: var(--color-titulo-srv);
-}
+} */ 
 
 /*CONFIGURACION HEADER POR BTN*/
 .header-titulo {
@@ -948,8 +949,8 @@ body {
             rgba(118, 114, 117, 0.7)), url(../img/iconos-contacto/fondoContacto.jpg);
     background-size: cover;
     margin-top: 20px;
-    max-width: 30vw;
-    max-height: 535px;
+    max-width: 40vw;
+    max-height: 600px;
     padding: 65px;
     display: flex;
     flex-direction: column;
