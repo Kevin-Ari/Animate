@@ -76,12 +76,12 @@
 
     .texto__oportunidades {
         width: 20vw;
-        height: 35vh;
+        height: 32vh;
         border-radius: 16px;
     }
 
     .img__oportunidades {
-        top: -60px;
+        
     }
 
 }
@@ -376,4 +376,15 @@
     }
 
 
+}
+
+
+@media (max-height: 980px) {
+    .texto__oportunidades{
+        height: 38vh;
+    }
+
+    .img__oportunidades{
+        top: -67px;
+    }
 }

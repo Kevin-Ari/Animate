@@ -1165,5 +1165,13 @@ body {
     padding-left: .3465rem;
 }
 
+.registro__mensaje__contenedor{
+    margin-top: 2rem;
+    height: 60vh;
+    width: 90vw;
+}
 
+.registro__mensaje{
+    font: var(--font-nombres);
+}
 
