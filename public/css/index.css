@@ -16,9 +16,9 @@
     --color-: #000000;
 
     --font-titulo: 700 clamp(1rem, 2.5vw, 2rem) 'raleway', sans-serif;
-    --font-nombres: 600 clamp(.8rem, 1.5vw, 1.8rem) 'raleway', sans-serif;
+    --font-nombres: 600 clamp(1rem, 1.5vw, 1.8rem) 'raleway', sans-serif;
     --font-puesto: 400 clamp(.8rem, 1.5vw, 1.8rem) 'raleway', sans-serif;
-    --font-texto: 600 clamp(.8rem, 1vw, 1.8rem) 'raleway', sans-serif;
+    --font-texto: 600 clamp(.9rem, 1vw, 1.8rem) 'raleway', sans-serif;
     --font-btn: 600 clamp(.8rem, 1.5vw, 1.8rem) 'raleway', sans-serif;
 
     --fondo-Testimonios: url(../img/Testimonios/testimonios.jpg)
@@ -166,17 +166,22 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 1.5rem;
 }
 
 .about__p {
-    max-width: 850px;
-    font-size: clamp(10px, 1.5vw, 20px);
+    width: 65%;
+    font: var(--font-nombres);
 }
 
 .about__img {
-    max-width: 18vw;
-    max-height: 25vh;
-    border-radius: 25px;
+    background-image: url('../img/logosAnimate/logo8.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18vw;
+    height: 26vh;
+    border-radius: 12px;
+    background-color: var(--color-sec);
 }
 
 /* CARDS */
