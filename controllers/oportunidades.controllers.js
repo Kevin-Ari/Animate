@@ -1,6 +1,11 @@
 const modeloOportunidad = require("../models/oportunidades.models");
 
-const crearOportunidad = async (req, res) => {
+const crearOportunidad = (req, res) => {
+    /* res.send('Formulario para agregar nuevas oportunidades (PRIVADO)') */
+    res.render('oportunidades/create')
+}
+
+const guardarOportunidad = async (req, res) => {
     res.send("Guarda las nuevas oportunidades en la base de datos (PRIVADO)");
     console.log(req.body);
     try {
@@ -18,4 +23,5 @@ const crearOportunidad = async (req, res) => {
 
 module.exports = {
     crearOportunidad,
+    guardarOportunidad,
 };
