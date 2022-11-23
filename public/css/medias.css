@@ -1,18 +1,26 @@
-/*---------------------VISTA grande-------------------*/
+/*---------------------VISTA mobile CONTACTO-------------------*/
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:1200px) {
     .contacto-contenedor {
         flex-direction: column;
     }
 
     .contenedor-texto {
-        max-width: 100vw;
-        max-height: 90vh;
-        padding: 10px;
+        min-width: 90vw;
+        min-height: 90vh;
+    }
+
+    .contenedor-titulo{
+        font-size: 23px;
+        margin: 20px 0px 15px 0px;
     }
 
     .contenedor-texto label {
         flex-direction: column;
+    }
+
+    .contenedor-texto input {
+        font-size: 19px;
     }
 
     .input-nombre,
@@ -20,7 +28,7 @@
     .dropdown,
     .label-texto,
     .contenedor-titulo {
-        width: 45vw;
+        min-width: 75vw;
     }
 
     .labels-medio {
@@ -29,17 +37,33 @@
     }
 
     .boton-enviar {
-        width: 20vw;
+        min-width: 30vw;
         margin: 20px 0px 20px 0px;
     }
 
     .contacto-seccion {
-        width: 55vw;
+        width: 65vw;
         margin: 10px;
+        gap: 20px;
     }
 
     .mini-contenedor {
-        width: 55vw;
+        width: 30vw;
+        margin-bottom: 0px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .titulo-seccion-2{
+        margin-top: 8px;
+    }
+
+    .telefono{
+        display: none;
+    }
+
+    .mail{
+        display: none;
     }
 
     .map {
@@ -55,18 +79,63 @@
         display: none;
     }
 
-    .contenedor-footer-1 {
-        width: 50vw;
-        margin: 0 auto;
+    .footer-logo-animate{
+        font-size: 75px;
     }
 
     .lista-footer {
         display: flex;
         flex-direction: column;
-        margin: 0px;
-        margin-left: 20px;
+        margin: 0px 0px 20px 20px;
     }
 
+    .contenedor-copyright {
+        height: 6vh;
+    }
+
+    .footer-texto {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-footer-1 {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
+    
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .contenedor-footer-2,
+    .contenedor-footer-3 {
+        display: none;
+    }
+
+    .footer {
+       margin-top: 50px;
+    }
+
+    .contenedor-footer-1 {
+        position: relative;
+        width: 90vw;
+        left: 30px;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+    .contenedor-footer-1 {
+        position: relative;
+        width: 90vw;
+        left: 200px;
+        margin: 0px;
+    }
+
+    .contenedor-footer-2,
+    .contenedor-footer-3 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1080px) {
@@ -192,30 +261,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/*
-@media screen and (min-width: 1500px) {
-    .contenedor-texto input {
-        width: 50vw;
-    }
-
-    .labels-top {
-        flex-direction: column;
-    }
-
-    .contacto-seccion {
-        width: 55vw;
-        margin: 10px;
-    }
-
-    .boton-enviar {
-        width: 20vw;
-    }
-
-    .contacto-main {
-        height: 125vh;
-    }
-}  */
 
 @media (max-width: 780px) {
 

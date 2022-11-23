@@ -915,7 +915,8 @@ body {
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    gap: 50px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .mini-contenedor {
@@ -923,17 +924,18 @@ body {
     border: 2px solid var(--color-sec);
     border-radius: 15px;
     margin-bottom: 55px;
-    width: 12.5vw;
+    width: 15vw;
+    padding: 10px;
 }
 
 .map {
-    width: 28vw;
+    width: 30vw;
     border-radius: 15px;
     border: 2px solid var(--color-sec);
     max-height: 550px;
 }
 
-.titulo-seccion {
+.titulo-seccion-1, .titulo-seccion-2 {
     font-weight: 800;
     color: var(--color-sec);
 }
@@ -982,10 +984,11 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: white;
+    margin-bottom: 20px;
 }
 
 .input-nombre {
-    width: 29vw;
+    width: 30vw;
     padding-left: 15px;
     border: none;
 }
@@ -995,12 +998,12 @@ body {
     flex-direction: row;
     justify-content: start;
     align-content: space-around;
-    gap: 50px;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .input-medio {
-    width: 13vw;
+    width: 14.5vw;
     padding-left: 15px;
 }
 
@@ -1013,7 +1016,7 @@ body {
     font-size: 20px;
     border-bottom: 3px solid rgb(96, 96, 96);
     color: #5c5c5c;
-    height: 40px;
+    height: 42px;
 }
 
 .label-texto {
@@ -1021,7 +1024,7 @@ body {
     border: 3px solid rgb(96, 96, 96);
     padding: 10px;
     margin-top: 20px;
-    width: 29vw;
+    width: 30vw;
     height: 20vh;
     border-radius: 30px;
 }
@@ -1032,8 +1035,8 @@ body {
     border-radius: 30px;
     background-color: var(--color-btn);
     padding: 18px;
-    margin-top: 30px;
-    width: 12vw;
+    margin-top: 25px;
+    width: 15vw;
     cursor: pointer;
 }
 
@@ -1048,6 +1051,7 @@ body {
     font-weight: 900;
     color: var(--color-btn);
     margin: 10px 20px;
+    margin-bottom: 30px;
 }
 
 .lista-footer {
