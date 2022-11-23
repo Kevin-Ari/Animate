@@ -13,4 +13,4 @@ const oportunidadSchema = mongoose.Schema({
     img: String
 })
 
-module.exports = mongoose.model('oportunidad', oportunidadSchema)
+module.exports = mongoose.model('oportunidades', oportunidadSchema)

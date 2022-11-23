@@ -76,12 +76,12 @@
 
     .texto__oportunidades {
         width: 20vw;
-        height: 35vh;
+        height: 32vh;
         border-radius: 16px;
     }
 
     .img__oportunidades {
-        top: -60px;
+        
     }
 
 }
@@ -217,18 +217,32 @@
     }
 }  */
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
+
+    .titulos{
+        max-width: none;
+        font: var(--font-titulo-M);
+        line-height: 2.5;
+    }
 
     /* home */
 
     .contenedor-home {
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-image: none;
+        background-color: var(--color-sec);
         height: 60vh;
     }
 
     .home-centro {
         width: 90%;
         margin: 0;
+    }
+
+    .home-titulo{
+        margin-top: 2rem;
     }
 
     .contenedor-button {
@@ -239,6 +253,10 @@
         width: 60vw;
     }
 
+    .about__img{
+        width: 42vw;
+        height: 19vh;
+    }
 
     /* Blog */
     .content {
@@ -247,10 +265,21 @@
 
     /* como empezo */
 
+    .about__p{
+        width: 86%;
+    }
+
     .about__caja {
         flex-direction: column;
     }
 
+    .img-A{
+        display: inline;
+    }
+
+    .img-B{
+        display: none;
+    }
     /* El team */
     .elTeam {
         gap: 1rem;
@@ -301,5 +330,58 @@
 
     .__seccion__img {
         width: 30%;
+    }
+}
+
+
+
+/* Height */
+
+@media (min-height: 1500px){
+
+    .about__img{
+        height: 15vh;
+    }
+
+    /* Oportunidades */
+
+    .oportunidades__caja__cards{
+        margin-top: 8rem;
+        gap: 8rem;
+    }
+
+    .texto__oportunidades{
+        height: 17vh;
+    }
+    .img__oportunidades{
+        width: 25vw;
+        top:-100px;
+    }
+
+    /* opiniones */
+
+    #Opiniones{
+        min-height: 50vh;
+    }
+
+    .opinion__contenedor{
+        height: 40%;
+    }
+
+    .opinion__caja__seccion{
+        min-height: 35vh;
+    }
+
+
+}
+
+
+@media (max-height: 980px) {
+    .texto__oportunidades{
+        height: 38vh;
+    }
+
+    .img__oportunidades{
+        top: -67px;
     }
 }
