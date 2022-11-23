@@ -1,6 +1,36 @@
-
 <section class="opor pestaña">
     <article class="content__opor">
-        
+        <p class="titulos">Crea una nueva oportunidad</p>
+        <form class="form" action="/oportunidades/" method="POST">
+
+            <div class="form__content">
+                <div class="form__inputs">
+                    <label for="img">Imagen</label>
+                    <input type="file" name="img" id="img">
+                </div>
+                <div class="form__inputs">
+                    <label for="empresa">Nombre de la empresa</label>
+                    <input type="text" class="form__campo" name="empresa" id="name" maxlength="50"
+                        required>
+                </div>
+                <div class="form__inputs">
+                    <label for="link">Link de la oportunidad</label>
+                    <input type="text" class="form__campo" name="link" id="link" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="fAlta">Fecha de alta</label>
+                    <input type="date" class="form__campo" name="fAlta" id="fAlta" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="fCierre">Fecha de cierre</label>
+                    <input type="date" class="form__campo" name="fCierre" id="fCierre" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="descripcion">Breve descripción de la oportunidad</label>
+                    <textarea name="descripcion" style="resize: none; min-height: 10vh; " class="form__campo" id="descripcion" maxlength="255" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="botones">¡ Guardar Oportunidad !</button>
+        </form>
     </article>
 </section>

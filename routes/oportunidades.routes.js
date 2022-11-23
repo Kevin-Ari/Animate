@@ -1,5 +1,5 @@
 const express = require('express')
-const { crearOportunidad } = require('../controllers/oportunidades.controllers')
+const { crearOportunidad, guardarOportunidad } = require('../controllers/oportunidades.controllers')
 const routerOpor = express.Router()
 
 // Rutas de oportunidades
@@ -14,11 +14,9 @@ routerOpor.get('/gestion', (req, res) => {
 
 /* ------ Crear oportunidad ------ */
 
-routerOpor.get('/create', (req, res) => {
-    res.send('Formulario para agregar nuevas oportunidades (PRIVADO)')
-})
+routerOpor.get('/create', crearOportunidad )
 
-routerOpor.post('/', crearOportunidad)
+routerOpor.post('/', guardarOportunidad)
 
 /* ------ Editar oportunidad ------ */
 
