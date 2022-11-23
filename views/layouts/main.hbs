@@ -17,14 +17,28 @@
         <a class="item-link" href="/">
             <p class="header-titulo"> animate </p>
         </a>
+        <button class="btn-mobil" aria-controls="nav__lista" aria-expanded="false">
+            <span class="sr-only">Menu principal</span>
+        </button>
         <nav class="header__nav">
-            <ul class="nav__lista">
+            <ul id="nav__lista" class="nav__lista" data-visible="false">
                 <li class="lista-item"><a class="item-link" href="/">Home</a></li>
                 <li class="lista-item"><a class="item-link" href="/#about">Sobre nosotros</a></li>
                 <li class="lista-item"><a class="item-link" href="/#Servicios">Servicios</a></li>
-                <li class="lista-item"><a class="item-link" href="/blog">Blog</a></li>
+                                <li class="lista-item container-submenu">
+                                    <a class="item-link submenu-btn">Comunidad</a>
+                                    <ul class="submenu">
+                                        <li class="item-submenu">
+                                            <a href="/#Oportunidades" class="link-submenu">Oportunidades</a>
+                                        </li>
+                                        <li class="item-submenu">
+                                            <a href="/blog" class="link-submenu">Blog</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                {{!-- <li class="lista-item"><a class="item-link" href="/blog">Blog</a></li> --}}
                 <!--<li class="lista-item"><a class="item-link" href="#testimonios">Testimonios</a></li> -->
-                <li class="lista-item"><a class="item-link" href="/#Oportunidades">Oportunidades</a></li>
+                {{!-- <li class="lista-item"><a class="item-link" href="/#Oportunidades">Oportunidades</a></li> --}}
                 <li class="lista-item"><a class="item-link" href="/#Contacto">Contacto</a></li>
             </ul>
         </nav>

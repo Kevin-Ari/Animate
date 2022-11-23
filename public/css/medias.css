@@ -80,9 +80,7 @@
         border-radius: 16px;
     }
 
-    .img__oportunidades {
-        
-    }
+    .img__oportunidades {}
 
 }
 
@@ -182,6 +180,38 @@
     .btn-mobil[aria-expanded="true"] {
         background-image: url('../img/MenuMobile2SVG.svg');
     }
+
+    /*------------------------SUBMENU----------------------*/
+    /*MENU DESPLEGABLE*/
+    .container-submenu {
+        position: relative;
+    }
+
+    .submenu {
+        width: 100%;
+        padding: 0;
+        height: 0;
+        overflow: visible;
+        z-index: 103;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .link-submenu:hover {
+        background-color: #666666;
+    }
+
+    .item-submenu {
+        display: block;
+        color: var(--color-fondo);
+        text-decoration: none;
+        background-color: var(--color-borde);
+    }
 }
 
 
@@ -222,7 +252,7 @@
 
 @media (max-width: 780px) {
 
-    .titulos{
+    .titulos {
         max-width: none;
         font: var(--font-titulo-M);
         line-height: 2.5;
@@ -244,7 +274,7 @@
         margin: 0;
     }
 
-    .home-titulo{
+    .home-titulo {
         margin-top: 2rem;
     }
 
@@ -256,7 +286,7 @@
         width: 60vw;
     }
 
-    .about__img{
+    .about__img {
         width: 42vw;
         height: 19vh;
     }
@@ -268,7 +298,7 @@
 
     /* como empezo */
 
-    .about__p{
+    .about__p {
         width: 86%;
     }
 
@@ -276,13 +306,14 @@
         flex-direction: column;
     }
 
-    .img-A{
+    .img-A {
         display: inline;
     }
 
-    .img-B{
+    .img-B {
         display: none;
     }
+
     /* El team */
     .elTeam {
         gap: 1rem;
@@ -336,42 +367,73 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .clasificacion {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*ELIMINACION DE BOTON MOBIL*/
+    .btn-mobil {
+        display: none;
+    }
+
+    /*---------------------------SUB MENU---------------------*/
+    /*SUBMENI INVISIBLE*/
+    .submenu {
+        position: absolute;
+
+    }
+
+    .link-submenu {
+        display: block;
+        padding: 1vw 4.5vw 1vw 4.5vw;
+        color: var(--color-fondo);
+        font-size: 1.2vw;
+
+    }
+
+    .link-submenu {
+        padding-right: 5em;
+        padding-left: 3em;
+    }
+}
 
 
 /* Height */
 
-@media (min-height: 1500px){
+@media (min-height: 1500px) {
 
-    .about__img{
+    .about__img {
         height: 15vh;
     }
 
     /* Oportunidades */
 
-    .oportunidades__caja__cards{
+    .oportunidades__caja__cards {
         margin-top: 8rem;
         gap: 8rem;
     }
 
-    .texto__oportunidades{
+    .texto__oportunidades {
         height: 17vh;
     }
-    .img__oportunidades{
+
+    .img__oportunidades {
         width: 25vw;
-        top:-100px;
+        top: -100px;
     }
 
     /* opiniones */
 
-    #Opiniones{
+    #Opiniones {
         min-height: 50vh;
     }
 
-    .opinion__contenedor{
+    .opinion__contenedor {
         height: 40%;
     }
 
-    .opinion__caja__seccion{
+    .opinion__caja__seccion {
         min-height: 35vh;
     }
 
@@ -380,11 +442,11 @@
 
 
 @media (max-height: 980px) {
-    .texto__oportunidades{
+    .texto__oportunidades {
         height: 38vh;
     }
 
-    .img__oportunidades{
+    .img__oportunidades {
         top: -67px;
     }
 }
