@@ -407,6 +407,10 @@
     .__seccion__img {
         width: 30%;
     }
+
+    .oportunidades__caja__cards{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width: 500px) {

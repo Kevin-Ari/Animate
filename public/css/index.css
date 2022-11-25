@@ -679,12 +679,11 @@ body {
 }
 
 .oportunidades__caja__cards{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     margin-top: 4.5rem;
+    
 }
 
 /* Cada article con su hover*/
