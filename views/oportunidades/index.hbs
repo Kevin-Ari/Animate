@@ -1,6 +1,24 @@
-
 <section class="opor pestaña">
-    <article class="content__opor">
+    <section class="oportunidades" id="Oportunidades">
+        <p class="titulos">Oportunidades</p>
+        <p class="intro__oportunidades">
+            En <strong class="strong-marca">animate</strong> creemos en la
+            retroalimentación y en el buen karma, es por eso que trabajamos para acercarte todas las ofertas académicas
+            en un solo lugar y puedas iniciarte en el mundo de la tecnología vos mismo
+        </p>
 
-    </article>
+        <article class="oportunidades__caja__cards">
+            {{#each allOpportunities}}
+            <div class="oportunidades__card">
+                <div class="texto__oportunidades">
+                    <img class="img__oportunidades " src={{this.img}} alt="Logo de la empresa {{this.empresa}}">
+                    <p class="titulo__organizacion">{{this.empresa}}</p>
+                    <p class="descripcion__organizacion">{{this.descripcion}}</p>
+                    <p class="inscripcion__oportunidades">{{this.fAlta}}</p>
+                    <a class="boton__oportunidades" href={{this.link}}>Ver más</a>
+                </div>
+            </div>
+            {{/each }}
+        </article>
+    </section>
 </section>

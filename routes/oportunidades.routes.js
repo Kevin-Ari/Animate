@@ -1,12 +1,26 @@
 const express = require('express')
-const { crearOportunidad, guardarOportunidad } = require('../controllers/oportunidades.controllers')
+const {v4 : uuidv4} = require('uuid')
+const { crearOportunidad, guardarOportunidad, oportunidades } = require('../controllers/oportunidades.controllers')
 const routerOpor = express.Router()
+
+const multer = require('multer')
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, '../public/img/imgOport')
+    },
+    filename: (req, file, cb) => {
+        cb(null, `${uuidv4()}.${file.mimetype.split('/')[1]}`)
+    }
+})
+
+const storageOport = multer({ sotrage: storage })
+
+
 
 // Rutas de oportunidades
 
-routerOpor.get('/', (req, res) => {
-    res.send('Muestra las oportunidades (PUBLICO)')
-})
+routerOpor.get('/', oportunidades)
 
 routerOpor.get('/gestion', (req, res) => {
     res.send('Gestion de oportunidades, donde se puede modificar agregar o borrar oportunidades (PRIVADO)')
@@ -14,9 +28,9 @@ routerOpor.get('/gestion', (req, res) => {
 
 /* ------ Crear oportunidad ------ */
 
-routerOpor.get('/create', crearOportunidad )
+routerOpor.get('/create',crearOportunidad )
 
-routerOpor.post('/', guardarOportunidad)
+routerOpor.post('/', storageOport.single('img') , guardarOportunidad)
 
 /* ------ Editar oportunidad ------ */
 

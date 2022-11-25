@@ -1,19 +1,22 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
+const sharp = require('sharp')
+
 const { engine } = require('express-handlebars')
+
 
 // Configuraciones
 
 require('dotenv').config()
 const app = express()
-
 app.engine('hbs', engine(
     {
         extname: '.hbs'
     }
 ))
-
 app.set('view engine', 'hbs')
+app.use(cors())
 
 // Middlewares
 app.use(express.urlencoded({ extended: true }))
@@ -28,9 +31,9 @@ const start = async () => {
         app.listen(process.env.PORT)
         console.log(`Todo ok en el puerto: ${process.env.PORT}`)
     } catch (err) {
-        console.log(`Tuvimos un problema: \n ${ err }`);
+        console.log(`Tuvimos un problema: \n ${err}`);
     }
-    
+
 }
 
 start()
@@ -46,5 +49,7 @@ app.get('/', (req, res) => {
 app.use('/blog', require('./routes/blog.routes'))
 app.use('/oportunidades', require('./routes/oportunidades.routes'))
 app.use('/registro', require('./routes/registro.routes'))
+
+
 
 
