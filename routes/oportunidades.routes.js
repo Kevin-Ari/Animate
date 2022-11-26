@@ -1,6 +1,6 @@
 const express = require('express')
 const {v4 : uuidv4} = require('uuid')
-const { crearOportunidad, guardarOportunidad, oportunidades } = require('../controllers/oportunidades.controllers')
+const { crearOportunidad, guardarOportunidad, oportunidades, gestionOportunidades, borrarOportunidad } = require('../controllers/oportunidades.controllers')
 const routerOpor = express.Router()
 
 const multer = require('multer')
@@ -22,9 +22,7 @@ const storageOport = multer({ sotrage: storage })
 
 routerOpor.get('/', oportunidades)
 
-routerOpor.get('/gestion', (req, res) => {
-    res.send('Gestion de oportunidades, donde se puede modificar agregar o borrar oportunidades (PRIVADO)')
-})
+routerOpor.get('/gestion', gestionOportunidades)
 
 /* ------ Crear oportunidad ------ */
 
@@ -34,7 +32,7 @@ routerOpor.post('/', storageOport.single('img') , guardarOportunidad)
 
 /* ------ Editar oportunidad ------ */
 
-routerOpor.get('/edit', (req, res) => {
+routerOpor.get('/edit/:id', (req, res) => {
     res.send('Muestra el formulario para editar una oportunidad (PRIVADO)')
 })
 
@@ -44,8 +42,6 @@ routerOpor.put('/:id', (req, res) => {
 
 /* ------ Borrar oportunidad ------ */
 
-routerOpor.delete('/:id', (req, res) => {
-    res.send('Borra una oportunidad de la base de datos(PRIVADO)')
-})
+routerOpor.delete('/:id', borrarOportunidad)
 
 module.exports = routerOpor

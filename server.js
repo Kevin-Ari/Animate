@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const mOverride = require('method-override')
 const cors = require('cors')
 const sharp = require('sharp')
 
@@ -22,6 +23,7 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(express.static('public'))
+app.use(mOverride('_method'))
 
 
 const start = async () => {

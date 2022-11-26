@@ -683,7 +683,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
     margin-top: 4.5rem;
-    
+
 }
 
 /* Cada article con su hover*/
@@ -748,6 +748,19 @@ body {
 .boton__oportunidades:hover {
     color: var(--color-btn);
     background-color: white;
+}
+
+.content__opor__menu{
+    display: flex;
+    background-color: var(--color-sec);
+    align-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 6px;
+}
+
+.content__opor__menu > div > a{
+    padding: 0;
 }
 
 /* hasta aca la parte de oportunidades Ana*/
@@ -1129,7 +1142,7 @@ body {
 
 /* ------------------ FORMULARIO DE REGISTRO ------------------ */
 
-.registrom, .content__opor{
+.registrom{
     display: flex;
     flex-direction: column;
     justify-content: center;
