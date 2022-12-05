@@ -1,6 +1,6 @@
 const express = require('express')
 const {v4 : uuidv4} = require('uuid')
-const { crearOportunidad, guardarOportunidad, oportunidades, gestionOportunidades, borrarOportunidad } = require('../controllers/oportunidades.controllers')
+const { crearOportunidad, guardarOportunidad, oportunidades, gestionOportunidades, borrarOportunidad, editarOportunidad, guardarCambiosOportunidad } = require('../controllers/oportunidades.controllers')
 const routerOpor = express.Router()
 
 const multer = require('multer')
@@ -32,13 +32,9 @@ routerOpor.post('/', storageOport.single('img') , guardarOportunidad)
 
 /* ------ Editar oportunidad ------ */
 
-routerOpor.get('/edit/:id', (req, res) => {
-    res.send('Muestra el formulario para editar una oportunidad (PRIVADO)')
-})
+routerOpor.get('/edit/:id', editarOportunidad)
 
-routerOpor.put('/:id', (req, res) => {
-    res.send('Guarda los cambios de la oportunidad editada (PRIVADO)')
-})
+routerOpor.put('/:id', guardarCambiosOportunidad)
 
 /* ------ Borrar oportunidad ------ */
 

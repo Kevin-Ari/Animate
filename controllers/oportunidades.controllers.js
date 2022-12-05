@@ -1,3 +1,4 @@
+const oportunidadesModels = require("../models/oportunidades.models");
 const modeloOportunidad = require("../models/oportunidades.models");
 
 
@@ -48,6 +49,37 @@ const guardarOportunidad = async (req, res) => {
     }
 };
 
+const editarOportunidad = async (req, res) => {
+    /* res.send('Muestra el formulario para editar una oportunidad (PRIVADO)') */
+    const { id } = req.params
+    try {
+        const oportunidad = await oportunidadesModels.findById(id).lean()
+        res.status(200).render('oportunidades/edit', {
+            oportunidad
+        })
+    } catch (error) {
+        
+    }
+}
+
+const guardarCambiosOportunidad = async (req, res) => {
+    /* res.send('Guarda los cambios de la oportunidad editada (PRIVADO)') */
+
+    try {
+        const { id } = req.params
+
+        const oportunidad = req.body
+        console.log(id)
+        console.log(oportunidad)
+
+        await oportunidadesModels.updateOne({_id: id }, { $set: oportunidad })
+        
+        res.redirect('/oportunidades/gestion')
+    } catch (error) {
+        
+    }
+}
+
 const borrarOportunidad = async (req, res) => {
     /* res.send('Borra una oportunidad de la base de datos(PRIVADO)') */
     try {
@@ -64,5 +96,7 @@ module.exports = {
     gestionOportunidades,
     crearOportunidad,
     guardarOportunidad,
+    editarOportunidad,
+    guardarCambiosOportunidad,
     borrarOportunidad
 };
