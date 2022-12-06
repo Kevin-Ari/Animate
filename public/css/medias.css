@@ -149,8 +149,6 @@
         border-radius: 16px;
     }
 
-    .img__oportunidades {}
-
 }
 
 
@@ -486,10 +484,6 @@
 
 @media (max-height: 980px) {
     .texto__oportunidades {
-        height: 38vh;
-    }
-
-    .img__oportunidades {
-        top: -67px;
+        min-height: 38vh;
     }
 }
