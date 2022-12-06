@@ -4,10 +4,11 @@
         <form class="form" action="/oportunidades/"  method="POST">
 
             <div class="form__content">
-                <div class="form__inputs">
+                {{!-- <div class="form__inputs">
                     <label for="img">Imagen</label>
                     <input type="file" name="img" id="img">
-                </div>
+                </div> --}}
+                <input type="hidden" name="img" value="../img/imgOport/opor.png">
                 <div class="form__inputs">
                     <label for="empresa">Nombre de la empresa</label>
                     <input type="text" class="form__campo" name="empresa" id="name" maxlength="50"
