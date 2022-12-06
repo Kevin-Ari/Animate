@@ -378,7 +378,7 @@
     /* Oportunidades */
 
     .oportunidades__caja__cards {
-        flex-direction: column;
+        flex-direction: crsolumn;
         gap: 4.5rem;
         margin-top: 4.5rem;
     }
