@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/medias.css">
+    <title>Animate{{title}}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logosAnimate/LOGO.ico">
+</head>
+
+<body>
+    <header class="header">
+        <a class="item-link" href="/">
+            <p class="header-titulo"> animate </p>
+        </a>
+        <button class="btn-mobil" aria-controls="nav__lista" aria-expanded="false">
+            <span class="sr-only">Menu principal</span>
+        </button>
+        <nav class="header__nav">
+            <ul id="nav__lista" class="nav__lista" data-visible="false">
+                <li class="lista-item"><a class="item-link" href="/">Home</a></li>
+                <li class="lista-item"><a class="item-link" href="/#about">Sobre nosotros</a></li>
+                <li class="lista-item"><a class="item-link" href="/#Servicios">Servicios</a></li>
+                                <li class="lista-item container-submenu">
+                                    <a class="item-link submenu-btn">Comunidad</a>
+                                    <ul class="submenu">
+                                        <li class="item-submenu">
+                                            <a href="/oportunidades/" class="link-submenu">Oportunidades</a>
+                                        </li>
+                                        <li class="item-submenu">
+                                            <a href="/blog" class="link-submenu">Blog</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                {{!-- <li class="lista-item"><a class="item-link" href="/blog">Blog</a></li> --}}
+                <!--<li class="lista-item"><a class="item-link" href="#testimonios">Testimonios</a></li> -->
+                {{!-- <li class="lista-item"><a class="item-link" href="/#Oportunidades">Oportunidades</a></li> --}}
+                <li class="lista-item"><a class="item-link" href="/#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {{{body}}}
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="contenedor-footer-1">
+                <p class="footer-logo-animate">animate</p>
+                <ul class="lista-footer">
+                    <li class="li-footer-1">
+                        {{!-- <img src="img/iconos-contacto/ubicación.png" class="icono-footer-1"> --}}
+                        <p class="footer-items"><i class="fa-solid fa-location-dot"></i> California 2082, C.A.B.A</p>
+                    </li>
+                    <li class="li-footer-1">
+                        {{!-- <img src="img/iconos-contacto/whatsapp.png" class="icono-footer-1"> --}}
+                            <p class="footer-items"><i class="fa-brands fa-whatsapp"></i> 11-3911-6748</p></li>
+                    <li class="li-footer-1">
+                        {{!-- <img src="img/iconos-contacto/instagram.png"
+                            class="icono-footer-1"> --}}
+                            <p class="footer-items"> <i class="fa-brands fa-instagram"></i> animate_digital</p></li>
+                    <li class="li-footer-1">
+                        {{!-- <img src="img/iconos-contacto/youtube.png" class="icono-footer-1"> --}}
+                            <p class="footer-items"> <i class="fa-brands fa-youtube"></i> Animate Agencia Digital</p></li>
+                </ul>
+            </div>
+            <div class="contenedor-footer-2">
+                <p class="contenedor-2-titulo">Nuestros servicios</p>
+                <ul class="lista-footer-2">
+                    <li class="lista-footer-2"><a>Programación</a></li>
+                    <li class="lista-footer-2"><a>Diseño Web</a></li>
+                    <li class="lista-footer-2"><a>WPO</a></li>
+                    <li class="lista-footer-2"><a>SEO</a></li>
+                    <li class="lista-footer-2"><a>SMO</a></li>
+                    <li class="lista-footer-2"><a>Web Hosting</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-footer-3">
+                <p class="contenedor-3-titulo">Entregamos factura "C"</p>
+                <img src="img/iconos-contacto/dataFiscal.png" class="img-factura-c">
+            </div>
+        </div>
+        <div class="contenedor-copyright">
+            <p class="footer-texto">&copy; Copyright Animate Digital - 2022 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/7a92306946.js" crossorigin="anonymous"></script>
+    <script src="/js/nav.js" defer=""></script>
+    <script src="/js/testimonios.js"></script>
+</body>
+
+</html>

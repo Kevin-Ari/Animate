@@ -1,0 +1,28 @@
+<section class="opor pestaña">
+    <article class="oportunidades">
+        <div class="titulos"> Gestion de oportunidades</div>
+        <div class="content__opor__menu">
+            <div class="opor__menu__opcion"><a class="item-link" href="/oportunidades/">Vista de oportunidades</a></div>
+            <div class="opor__menu__opcion"><a class="item-link" href="/oportunidades/create">Crear una nueva
+                    oportunidad</a></div>
+        </div>
+
+        <div class="oportunidades__caja__cards">
+            {{#each allOpportunities}}
+            <div class="oportunidades__card">
+                <div class="texto__oportunidades">
+                    <img class="img__oportunidades " src={{this.img}} alt="Logo de la empresa {{this.empresa}}">
+                    <p class="titulo__organizacion">{{this.empresa}}</p>
+                    <p class="descripcion__organizacion">{{this.descripcion}}</p>
+                    <p class="inscripcion__oportunidades">{{this.fAlta}}</p>
+                    <a class="boton__oportunidades" href={{this.link}}>Ver más</a>
+                    <a href="/oportunidades/edit/{{this._id}}">Editar</a>
+                    <form action="/oportunidades/{{this._id}}?_method=DELETE" method="POST">
+                        <button class="botones">Borrar</button>
+                    </form>
+                </div>
+            </div>
+            {{/each }}
+        </div>
+    </article>
+</section>

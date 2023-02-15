@@ -1,0 +1,29 @@
+<section class="opor pestaña">
+    <article class="oportunidades">
+        <p class="titulos">Editar Oportunidad</p>
+        <form class="form" action="/oportunidades/{{oportunidad._id}}?_method=PUT" method="POST">
+
+            <div class="form__content">
+                
+                <div class="form__inputs">
+                    <label for="empresa">Nombre de la empresa</label>
+                    <input type="text" class="form__campo" name="empresa" id="name" maxlength="50" value="{{oportunidad.empresa}}" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="link">Link de la oportunidad</label>
+                    <input type="text" class="form__campo" name="link" id="link" value="{{oportunidad.link}}" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="fCierre">Fecha de cierre</label>
+                    <input type="date" class="form__campo" name="fCierre" id="fCierre" value="{{oprotunidad.fCierre}}" required>
+                </div>
+                <div class="form__inputs">
+                    <label for="descripcion">Breve descripción de la oportunidad</label>
+                    <textarea name="descripcion" style="resize: none; min-height: 10vh; " class="form__campo"
+                        id="descripcion" maxlength="255" required>{{oportunidad.descripcion}}</textarea>
+                </div>
+            </div>
+            <button type="submit" class="botones">¡ Guardar Cambios !</button>
+        </form>
+    </article>
+</section>

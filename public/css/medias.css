@@ -1,0 +1,489 @@
+/*---------------------VISTA mobile CONTACTO-------------------*/
+
+@media screen and (max-width:1200px) {
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+
+    .contenedor-texto {
+        min-width: 90vw;
+        min-height: 90vh;
+    }
+
+    .contenedor-titulo{
+        font-size: 23px;
+        margin: 20px 0px 15px 0px;
+    }
+
+    .contenedor-texto label {
+        flex-direction: column;
+    }
+
+    .contenedor-texto input {
+        font-size: 19px;
+    }
+
+    .input-nombre,
+    .input-medio,
+    .dropdown,
+    .label-texto,
+    .contenedor-titulo {
+        min-width: 75vw;
+    }
+
+    .labels-medio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .boton-enviar {
+        min-width: 30vw;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .contacto-seccion {
+        width: 65vw;
+        margin: 10px;
+        gap: 20px;
+    }
+
+    .mini-contenedor {
+        width: 30vw;
+        margin-bottom: 0px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .titulo-seccion-2{
+        margin-top: 8px;
+    }
+
+    .telefono{
+        display: none;
+    }
+
+    .mail{
+        display: none;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .contenedor-footer-2,
+    .contenedor-footer-3 {
+        display: none;
+    }
+
+    .footer-logo-animate{
+        font-size: 75px;
+    }
+
+    .lista-footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 20px 20px;
+    }
+
+    .contenedor-copyright {
+        height: 6vh;
+    }
+
+    .footer-texto {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-footer-1 {
+        margin: 0 auto;
+        width: 90vw;
+    }
+}
+    
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .contenedor-footer-2,
+    .contenedor-footer-3 {
+        display: none;
+    }
+
+    .footer {
+       margin-top: 50px;
+    }
+
+    .contenedor-footer-1 {
+        position: relative;
+        width: 90vw;
+        left: 30px;
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+    .contenedor-footer-1 {
+        position: relative;
+        width: 90vw;
+        left: 200px;
+        margin: 0px;
+    }
+
+    .contenedor-footer-2,
+    .contenedor-footer-3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contacto-main {
+        height: 83vh;
+    }
+
+    .texto__oportunidades {
+        width: 20vw;
+        height: 32vh;
+        border-radius: 16px;
+    }
+
+}
+
+
+@media screen and (min-width:900px) {
+
+    /* Servicios */
+    .flex-srv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+
+    /* Header */
+    .header {
+        position: fixed;
+        z-index: 5;
+    }
+}
+
+/*---------------------VISTA MOBIL-------------------*/
+@media screen and (max-width: 870px) {
+    .header {
+        z-index: 100;
+        position: fixed;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    /*TITULO HEADER*/
+    .header-titulo {
+        z-index: 101;
+    }
+
+    /*TITULO PRINCIPAL DE SERVICIO*/
+    .titulo-principal {
+        font-size: 4.2vw;
+    }
+
+    .marco-servicios {
+        width: 35%;
+    }
+
+    /*--------------------NAV CONFIGURACION--------------*/
+    /*LISTA MOBIL POR DEFAULT*/
+    .nav__lista {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--color-fondo-nav);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 8vh;
+
+        transform: translateY(-100%);
+        padding: 0px;
+    }
+
+    .item-link {
+        font-size: 3vh;
+    }
+
+    /*CONFIGURACION DEL BOTON*/
+    .btn-mobil {
+        display: block;
+        position: absolute;
+        padding-top: 1.1vw;
+        right: 1.6vw;
+        top: 1.5vw;
+        z-index: 101;
+
+        width: 3em;
+        height: 3em;
+        border: none;
+        background-color: transparent;
+        background-image: url('../img/MenuMobileSVG.svg');
+        background-repeat: no-repeat;
+    }
+
+    /*-------------------FUNCIONES DEL BOTON------------------*/
+    /*SENTENCIA LISTA*/
+    .nav__lista[data-visible="true"] {
+        transform: translateX(0);
+        transition: transform 300ms ease;
+    }
+
+    /*SENTENCIA DEL BOTON*/
+    .btn-mobil[aria-expanded="true"] {
+        background-image: url('../img/MenuMobile2SVG.svg');
+    }
+
+    /*------------------------SUBMENU----------------------*/
+    /*MENU DESPLEGABLE*/
+    .container-submenu {
+        position: relative;
+    }
+
+    .submenu {
+        width: 100%;
+        padding: 0;
+        height: 0;
+        overflow: visible;
+        z-index: 103;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .link-submenu:hover {
+        background-color: #666666;
+    }
+
+    .item-submenu {
+        display: block;
+        color: var(--color-fondo);
+        text-decoration: none;
+        background-color: var(--color-borde);
+    }
+}
+
+
+@media (max-width: 840px) {
+
+    /* Blog */
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 780px) {
+
+    .titulos {
+        max-width: none;
+        font: var(--font-titulo-M);
+        line-height: 2.5;
+    }
+
+    /* home */
+
+    .contenedor-home {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: none;
+        background-color: var(--color-sec);
+        height: 60vh;
+    }
+
+    .home-centro {
+        width: 90%;
+        margin: 0;
+    }
+
+    .home-titulo {
+        margin-top: 2rem;
+    }
+
+    .contenedor-button {
+        margin: 0;
+    }
+
+    .boton-home {
+        width: 60vw;
+    }
+
+    .about__img {
+        width: 42vw;
+        height: 19vh;
+    }
+
+    /* Blog */
+    .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* como empezo */
+
+    .about__p {
+        width: 86%;
+    }
+
+    .about__caja {
+        flex-direction: column;
+    }
+
+    .img-A {
+        display: inline;
+    }
+
+    .img-B {
+        display: none;
+    }
+
+    /* El team */
+    .elTeam {
+        gap: 1rem;
+    }
+
+    .contenedor__cards,
+    .contenedor__cards2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    /* Oportunidades */
+
+    .oportunidades__caja__cards {
+        flex-direction: crsolumn;
+        gap: 4.5rem;
+        margin-top: 4.5rem;
+    }
+
+    .texto__oportunidades {
+        gap: .5rem;
+        width: 60vw;
+        height: 38vh;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .img__oportunidades {
+        width: 30vw;
+        top: -50px;
+    }
+
+    /* testimonios */
+
+    .opinion__contenedor {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .__seccion__img {
+        width: 30%;
+    }
+
+    .oportunidades__caja__cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .clasificacion {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*ELIMINACION DE BOTON MOBIL*/
+    .btn-mobil {
+        display: none;
+    }
+
+    /*---------------------------SUB MENU---------------------*/
+    /*SUBMENI INVISIBLE*/
+    .submenu {
+        position: absolute;
+
+    }
+
+    .link-submenu {
+        display: block;
+        padding: 1vw 4.5vw 1vw 4.5vw;
+        color: var(--color-fondo);
+        font-size: 1.2vw;
+
+    }
+
+    .link-submenu {
+        padding-right: 5em;
+        padding-left: 3em;
+    }
+}
+
+
+/* Height */
+
+@media (min-height: 1500px) {
+
+    .about__img {
+        height: 15vh;
+    }
+
+    /* Oportunidades */
+
+    .oportunidades__caja__cards {
+        margin-top: 8rem;
+        gap: 8rem;
+    }
+
+    .texto__oportunidades {
+        height: 17vh;
+    }
+
+    .img__oportunidades {
+        width: 25vw;
+        top: -100px;
+    }
+
+    /* opiniones */
+
+    #Opiniones {
+        min-height: 50vh;
+    }
+
+    .opinion__contenedor {
+        height: 40%;
+    }
+
+    .opinion__caja__seccion {
+        min-height: 35vh;
+    }
+
+
+}
+
+
+@media (max-height: 980px) {
+    .texto__oportunidades {
+        min-height: 38vh;
+    }
+}
